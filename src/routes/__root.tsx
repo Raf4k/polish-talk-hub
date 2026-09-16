@@ -193,7 +193,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          &copy; 2026 Fundacja Pryzmat Dźwięku. Wszelkie prawa zastrzeżone.
+          &copy; 2026 Fundacja Przez Pryzmat Dźwięku. Wszelkie prawa zastrzeżone.
         </div>
       </div>
     </footer>

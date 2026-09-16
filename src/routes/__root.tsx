@@ -157,7 +157,7 @@ function Header() {
           </div>
           <img
             src={logoUrl}
-            alt="Logo Fundacji Pryzmat Dźwięku"
+            alt="Logo Fundacji Przez Pryzmat Dźwięku"
             width={48}
             height={48}
             className="h-12 w-12 object-contain"

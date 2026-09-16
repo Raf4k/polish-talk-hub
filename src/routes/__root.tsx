@@ -133,6 +133,13 @@ function Header() {
             O nas
           </Link>
           <Link
+            to="/projekty"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            activeProps={{ className: "text-primary font-medium" }}
+          >
+            Projekty
+          </Link>
+          <Link
             to="/bajtlove-granie"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             activeProps={{ className: "text-primary font-medium" }}

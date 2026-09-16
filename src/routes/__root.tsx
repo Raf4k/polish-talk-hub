@@ -205,13 +205,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Fundacja Pryzmat Dźwięku" },
+      { title: "Fundacja Przez Pryzmat Dźwięku" },
       {
         name: "description",
         content:
           "Wierzymy, że muzyka zmienia sposób, w jaki patrzymy na świat i siebie nawzajem. Tworzymy przestrzeń, w której kultura, muzyka i sztuka spotykają się z życiem rodzinnym.",
       },
-      { property: "og:title", content: "Fundacja Pryzmat Dźwięku" },
+      { property: "og:title", content: "Fundacja Przez Pryzmat Dźwięku" },
       {
         property: "og:description",
         content:

@@ -6,14 +6,14 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "Fundacja Pryzmat Dźwięku — Muzyka zmienia sposób, w jaki patrzymy na świat",
+          "Fundacja Przez Pryzmat Dźwięku — Muzyka zmienia sposób, w jaki patrzymy na świat",
       },
       {
         name: "description",
         content:
           "Wierzymy, że muzyka zmienia sposób, w jaki patrzymy na świat i siebie nawzajem. Tworzymy przestrzeń, w której kultura, muzyka i sztuka spotykają się z życiem rodzinnym.",
       },
-      { property: "og:title", content: "Fundacja Pryzmat Dźwięku" },
+      { property: "og:title", content: "Fundacja Przez Pryzmat Dźwięku" },
       {
         property: "og:description",
         content:

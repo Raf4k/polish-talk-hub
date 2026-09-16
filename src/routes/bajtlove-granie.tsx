@@ -3,17 +3,17 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/bajtlove-granie")({
   head: () => ({
     meta: [
-      { title: "BajtLOVE Granie — Fundacja Pryzmat Dźwięku" },
+      { title: "BajtLOVE Granie — Fundacja Przez Pryzmat Dźwięku" },
       {
         name: "description",
         content:
-          "BajtLOVE Granie — projekt Fundacji Pryzmat Dźwięku. Informacje o projekcie wkrótce.",
+          "BajtLOVE Granie — projekt Fundacji Przez Pryzmat Dźwięku. Informacje o projekcie wkrótce.",
       },
-      { property: "og:title", content: "BajtLOVE Granie — Fundacja Pryzmat Dźwięku" },
+      { property: "og:title", content: "BajtLOVE Granie — Fundacja Przez Pryzmat Dźwięku" },
       {
         property: "og:description",
         content:
-          "BajtLOVE Granie — projekt Fundacji Pryzmat Dźwięku.",
+          "BajtLOVE Granie — projekt Fundacji Przez Pryzmat Dźwięku.",
       },
       { property: "og:type", content: "website" },
     ],

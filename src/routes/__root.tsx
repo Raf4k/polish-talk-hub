@@ -175,20 +175,21 @@ function Footer() {
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <h3 className="font-display text-lg font-semibold text-foreground">
-              Fundacja Pryzmat Dźwięku
+              Fundacja Przez Pryzmat Dźwięku
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">
               Tworzymy kulturę, która łączy.
             </p>
           </div>
           <div className="space-y-1 text-sm text-muted-foreground">
-            <p><span className="font-medium text-foreground">Adres:</span> [do uzupełnienia]</p>
-            <p><span className="font-medium text-foreground">KRS:</span> [do uzupełnienia]</p>
-            <p><span className="font-medium text-foreground">NIP:</span> [do uzupełnienia]</p>
-            <p><span className="font-medium text-foreground">REGON:</span> [do uzupełnienia]</p>
+            <p><span className="font-medium text-foreground">Adres:</span> ul. Zwycięstwa 1, 44-100 Gliwice</p>
+            <p><span className="font-medium text-foreground">KRS:</span> 0001144183</p>
+            <p><span className="font-medium text-foreground">NIP:</span> 6312727778</p>
+            <p><span className="font-medium text-foreground">REGON:</span> 540417288</p>
             <p><span className="font-medium text-foreground">Konto bankowe:</span> [do uzupełnienia]</p>
             <p><span className="font-medium text-foreground">Email:</span> [do uzupełnienia]</p>
             <p><span className="font-medium text-foreground">Telefon:</span> [do uzupełnienia]</p>
+            <p className="pt-2"><span className="font-medium text-foreground">Zarząd:</span> Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu</p>
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">

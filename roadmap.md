@@ -27,5 +27,6 @@
 - [ ] Treść strony "O nas" (pełna)
 - [ ] Treść strony "BajtLOVE Granie"
 - [ ] URL-e do mediów społecznościowych
-- [ ] Dane fundacji: KRS, NIP, REGON, adres, konto bankowe, email, telefon
-- [ ] Podpisy do zdjęcia zarządu (imiona/nazwiska)
+- [x] Dane fundacji: KRS 0001144183, NIP 6312727778, REGON 540417288, adres ul. Zwycięstwa 1, 44-100 Gliwice, zarząd (Małgorzata Kramarz, Dominika Kocur)
+- [ ] Pozostałe dane fundacji: konto bankowe, email, telefon
+- [x] Podpisy do zdjęcia zarządu (Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu)

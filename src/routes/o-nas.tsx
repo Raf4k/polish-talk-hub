@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import zarzadAsset from "../assets/zarzad.jpeg.asset.json";
 
 export const Route = createFileRoute("/o-nas")({
   head: () => ({
@@ -52,6 +53,19 @@ function ONas() {
         niż obraz. A wspólne tworzenie to coś więcej niż zajęcia. To sposób na
         budowanie więzi. Rozwijanie wyobraźni. Odkrywanie własnego głosu.
       </p>
+
+      {/* Zdjęcie zarządu */}
+      <div className="mt-16">
+        <img
+          src={zarzadAsset.url}
+          alt="Zarząd Fundacji Pryzmat Dźwięku — dwie współzałożycielki w profesjonalnej sesji zdjęciowej"
+          loading="lazy"
+          className="mx-auto w-full max-w-md rounded-lg object-cover shadow-lg"
+        />
+        <p className="mt-4 text-center text-sm text-muted-foreground">
+          Zarząd Fundacji Pryzmat Dźwięku
+        </p>
+      </div>
     </section>
   );
 }

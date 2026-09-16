@@ -10,16 +10,22 @@
 - [x] Treść misji fundacji poniżej hero
 
 ### Zakładki
-- [x] O nas (/o-nas)
+- [x] O nas (/o-nas) — ze zdjęciem zarządu
 - [x] BajtLOVE Granie (/bajtlove-granie)
+
+### Stopka
+- [x] Dane kontaktowe i KRS/NIP/REGON/adres/konto bankowe (placeholdery do uzupełnienia)
 
 ### Design
 - [x] Paleta: Terakota i szałwia
 - [x] Typografia: Lora + Nunito Sans
 - [x] Układ: pojedyncza kolumna
 - [x] Logo i zdjęcie główne wygenerowane
+- [x] Favicon z logo
 
 ### Oczekuje na treść od użytkownika
-- [ ] Treść strony "O nas"
+- [ ] Treść strony "O nas" (pełna)
 - [ ] Treść strony "BajtLOVE Granie"
 - [ ] URL-e do mediów społecznościowych
+- [ ] Dane fundacji: KRS, NIP, REGON, adres, konto bankowe, email, telefon
+- [ ] Podpisy do zdjęcia zarządu (imiona/nazwiska)

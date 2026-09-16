@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BajtloveGranieRouteImport } from './routes/bajtlove-granie'
+import { Route as ONasRouteImport } from './routes/o-nas'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BajtloveGranieRoute = BajtloveGranieRouteImport.update({
+  id: '/bajtlove-granie',
+  path: '/bajtlove-granie',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ONasRoute = ONasRouteImport.update({
+  id: '/o-nas',
+  path: '/o-nas',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/o-nas': typeof ONasRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/o-nas': typeof ONasRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/o-nas': typeof ONasRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/bajtlove-granie' | '/o-nas'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/bajtlove-granie' | '/o-nas'
+  id: '__root__' | '/' | '/bajtlove-granie' | '/o-nas'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BajtloveGranieRoute: typeof BajtloveGranieRoute
+  ONasRoute: typeof ONasRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bajtlove-granie': {
+      id: '/bajtlove-granie'
+      path: '/bajtlove-granie'
+      fullPath: '/bajtlove-granie'
+      preLoaderRoute: typeof BajtloveGranieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/o-nas': {
+      id: '/o-nas'
+      path: '/o-nas'
+      fullPath: '/o-nas'
+      preLoaderRoute: typeof ONasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BajtloveGranieRoute: BajtloveGranieRoute,
+  ONasRoute: ONasRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

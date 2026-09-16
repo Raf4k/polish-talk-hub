@@ -4,17 +4,17 @@ import zarzadAsset from "../assets/zarzad.jpeg.asset.json";
 export const Route = createFileRoute("/o-nas")({
   head: () => ({
     meta: [
-      { title: "O nas — Fundacja Pryzmat Dźwięku" },
+      { title: "O nas — Fundacja Przez Pryzmat Dźwięku" },
       {
         name: "description",
         content:
-          "Poznaj Fundację Pryzmat Dźwięku. Tworzymy przestrzeń, w której kultura, muzyka i sztuka spotykają się z życiem rodzinnym.",
+          "Poznaj Fundację Przez Pryzmat Dźwięku. Tworzymy przestrzeń, w której kultura, muzyka i sztuka spotykają się z życiem rodzinnym.",
       },
-      { property: "og:title", content: "O nas — Fundacja Pryzmat Dźwięku" },
+      { property: "og:title", content: "O nas — Fundacja Przez Pryzmat Dźwięku" },
       {
         property: "og:description",
         content:
-          "Poznaj Fundację Pryzmat Dźwięku. Tworzymy przestrzeń, w której kultura, muzyka i sztuka spotykają się z życiem rodzinnym.",
+          "Poznaj Fundację Przez Pryzmat Dźwięku. Tworzymy przestrzeń, w której kultura, muzyka i sztuka spotykają się z życiem rodzinnym.",
       },
       { property: "og:type", content: "website" },
     ],
@@ -30,7 +30,7 @@ function ONas() {
         O nas
       </h1>
       <p className="mt-6 text-lg leading-relaxed text-foreground md:text-xl">
-        Fundacja Pryzmat Dźwięku tworzy przestrzeń, w której kultura, muzyka i
+        Fundacja Przez Pryzmat Dźwięku tworzy przestrzeń, w której kultura, muzyka i
         sztuka spotykają się z życiem rodzinnym. Inspirujemy, rozwijamy
         wrażliwość i budujemy relacje, pokazując, że wspólne przeżywanie sztuki
         może być początkiem ważnej rozmowy, odkrywania siebie i bycia razem.
@@ -58,7 +58,7 @@ function ONas() {
       <div className="mt-16">
         <img
           src={zarzadAsset.url}
-          alt="Zarząd Fundacji Pryzmat Dźwięku — dwie współzałożycielki w profesjonalnej sesji zdjęciowej"
+          alt="Zarząd Fundacji Przez Pryzmat Dźwięku — dwie współzałożycielki w profesjonalnej sesji zdjęciowej"
           loading="lazy"
           className="mx-auto w-full max-w-md rounded-lg object-cover shadow-lg"
         />

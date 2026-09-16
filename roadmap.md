@@ -11,6 +11,7 @@
 
 ### Zakładki
 - [x] O nas (/o-nas) — ze zdjęciem zarządu
+- [x] Projekty (/projekty)
 - [x] BajtLOVE Granie (/bajtlove-granie)
 
 ### Stopka

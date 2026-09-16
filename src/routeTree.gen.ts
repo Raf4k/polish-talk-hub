@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BajtloveGranieRouteImport } from './routes/bajtlove-granie'
 import { Route as ONasRouteImport } from './routes/o-nas'
+import { Route as ProjektyRouteImport } from './routes/projekty'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,35 +29,44 @@ const ONasRoute = ONasRouteImport.update({
   path: '/o-nas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjektyRoute = ProjektyRouteImport.update({
+  id: '/projekty',
+  path: '/projekty',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
   '/o-nas': typeof ONasRoute
+  '/projekty': typeof ProjektyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
   '/o-nas': typeof ONasRoute
+  '/projekty': typeof ProjektyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
   '/o-nas': typeof ONasRoute
+  '/projekty': typeof ProjektyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bajtlove-granie' | '/o-nas'
+  fullPaths: '/' | '/bajtlove-granie' | '/o-nas' | '/projekty'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bajtlove-granie' | '/o-nas'
-  id: '__root__' | '/' | '/bajtlove-granie' | '/o-nas'
+  to: '/' | '/bajtlove-granie' | '/o-nas' | '/projekty'
+  id: '__root__' | '/' | '/bajtlove-granie' | '/o-nas' | '/projekty'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BajtloveGranieRoute: typeof BajtloveGranieRoute
   ONasRoute: typeof ONasRoute
+  ProjektyRoute: typeof ProjektyRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +92,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ONasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projekty': {
+      id: '/projekty'
+      path: '/projekty'
+      fullPath: '/projekty'
+      preLoaderRoute: typeof ProjektyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BajtloveGranieRoute: BajtloveGranieRoute,
   ONasRoute: ONasRoute,
+  ProjektyRoute: ProjektyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -140,7 +140,7 @@ function Header() {
             BajtLOVE Granie
           </Link>
         </nav>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             {socialLinks.map(({ name, href, Icon }) => (
               <a

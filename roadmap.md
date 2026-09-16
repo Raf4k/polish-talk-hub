@@ -1,0 +1,31 @@
+# Roadmap — Fundacja Pryzmat Dźwięku
+
+## Strona internetowa fundacji
+
+### Strona główna (/)
+- [x] Zdjęcie główne (hero)
+- [x] Logo w prawym górnym rogu
+- [x] Linki do mediów społecznościowych (FB, IG, YT, LinkedIn) w prawym górnym rogu
+- [x] Motto na środku: "WIERZYMY, ŻE MUZYKA ZMIENIA SPOSÓB W JAKI PATRZYMY NA ŚWIAT I SIEBIE NAWZAJEM"
+- [x] Treść misji fundacji poniżej hero
+
+### Zakładki
+- [x] O nas (/o-nas) — ze zdjęciem zarządu
+- [x] BajtLOVE Granie (/bajtlove-granie)
+
+### Stopka
+- [x] Dane kontaktowe i KRS/NIP/REGON/adres/konto bankowe (placeholdery do uzupełnienia)
+
+### Design
+- [x] Paleta: Terakota i szałwia
+- [x] Typografia: Lora + Nunito Sans
+- [x] Układ: pojedyncza kolumna
+- [x] Logo i zdjęcie główne wygenerowane
+- [x] Favicon z logo
+
+### Oczekuje na treść od użytkownika
+- [ ] Treść strony "O nas" (pełna)
+- [ ] Treść strony "BajtLOVE Granie"
+- [ ] URL-e do mediów społecznościowych
+- [ ] Dane fundacji: KRS, NIP, REGON, adres, konto bankowe, email, telefon
+- [ ] Podpisy do zdjęcia zarządu (imiona/nazwiska)

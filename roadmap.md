@@ -12,7 +12,11 @@
 ### Zakładki
 - [x] O nas (/o-nas) — ze zdjęciem zarządu
 - [x] Projekty (/projekty)
+- [x] Galeria (/galeria)
 - [x] BajtLOVE Granie (/bajtlove-granie)
+
+### Hero
+- [x] Rotujący hero — 4 zdjęcia (płynne przejścia, auto-zmiana co 7 s, wskaźniki)
 
 ### Stopka
 - [x] Dane kontaktowe i KRS/NIP/REGON/adres/konto bankowe (placeholdery do uzupełnienia)

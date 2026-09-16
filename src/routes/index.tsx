@@ -1,5 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroUrl from "../assets/hero.jpg";
+import { useEffect, useState } from "react";
+import hero1 from "../assets/hero.jpg";
+import hero2 from "../assets/hero-2.jpg";
+import hero3 from "../assets/hero-3.jpg";
+import hero4 from "../assets/hero-4.jpg";
+
+const HERO_IMAGES = [
+  { src: hero1, alt: "Pryzmat rozszczepiający światło na ciemnym drewnie" },
+  { src: hero2, alt: "Pryzmat, nuty i flet w świetle terakoty i szałwii" },
+  { src: hero3, alt: "Pryzmat, farby dziecka i suszona szałwia" },
+  { src: hero4, alt: "Pryzmat, gitara i ceramiczna waza" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -25,25 +36,67 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+function HeroCarousel() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1) % HERO_IMAGES.length);
+    }, 7000);
+    return () => clearInterval(id);
+  }, []);
+
+  return (
+    <section
+      className="relative flex h-screen items-center justify-center overflow-hidden"
+      aria-roledescription="karuzela"
+      aria-label="Galeria zdjęć hero"
+    >
+      {HERO_IMAGES.map((img, i) => (
+        <img
+          key={i}
+          src={img.src}
+          alt={img.alt}
+          width={1920}
+          height={1088}
+          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-[2000ms] ease-in-out"
+          style={{ opacity: i === index ? 1 : 0 }}
+          aria-hidden={i !== index}
+          loading={i === 0 ? "eager" : "lazy"}
+        />
+      ))}
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="relative z-10 px-6 text-center">
+        <h1 className="mx-auto max-w-4xl font-display text-3xl font-semibold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+          WIERZYMY, ŻE MUZYKA ZMIENIA SPOSÓB W JAKI PATRZYMY NA ŚWIAT I SIEBIE NAWZAJEM
+        </h1>
+      </div>
+      {/* Wskaźniki */}
+      <div className="absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 gap-3">
+        {HERO_IMAGES.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => setIndex(i)}
+            aria-label={`Zdjęcie ${i + 1}`}
+            aria-current={i === index}
+            className={
+              "h-2 rounded-full transition-all duration-300 " +
+              (i === index
+                ? "w-8 bg-white"
+                : "w-2 bg-white/50 hover:bg-white/80")
+            }
+          />
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Index() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative flex h-screen items-center justify-center overflow-hidden">
-        <img
-          src={heroUrl}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 px-6 text-center">
-          <h1 className="mx-auto max-w-4xl font-display text-3xl font-semibold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
-            WIERZYMY, ŻE MUZYKA ZMIENIA SPOSÓB W JAKI PATRZYMY NA ŚWIAT I SIEBIE NAWZAJEM
-          </h1>
-        </div>
-      </section>
+      <HeroCarousel />
 
       {/* Mission content */}
       <section className="mx-auto max-w-3xl px-6 py-16 md:py-24">

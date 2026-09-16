@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BajtloveGranieRouteImport } from './routes/bajtlove-granie'
+import { Route as GaleriaRouteImport } from './routes/galeria'
 import { Route as ONasRouteImport } from './routes/o-nas'
 import { Route as ProjektyRouteImport } from './routes/projekty'
 
@@ -22,6 +23,11 @@ const IndexRoute = IndexRouteImport.update({
 const BajtloveGranieRoute = BajtloveGranieRouteImport.update({
   id: '/bajtlove-granie',
   path: '/bajtlove-granie',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GaleriaRoute = GaleriaRouteImport.update({
+  id: '/galeria',
+  path: '/galeria',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ONasRoute = ONasRouteImport.update({
@@ -38,12 +44,14 @@ const ProjektyRoute = ProjektyRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/galeria': typeof GaleriaRoute
   '/o-nas': typeof ONasRoute
   '/projekty': typeof ProjektyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/galeria': typeof GaleriaRoute
   '/o-nas': typeof ONasRoute
   '/projekty': typeof ProjektyRoute
 }
@@ -51,20 +59,23 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/galeria': typeof GaleriaRoute
   '/o-nas': typeof ONasRoute
   '/projekty': typeof ProjektyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bajtlove-granie' | '/o-nas' | '/projekty'
+  fullPaths: '/' | '/bajtlove-granie' | '/galeria' | '/o-nas' | '/projekty'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bajtlove-granie' | '/o-nas' | '/projekty'
-  id: '__root__' | '/' | '/bajtlove-granie' | '/o-nas' | '/projekty'
+  to: '/' | '/bajtlove-granie' | '/galeria' | '/o-nas' | '/projekty'
+  id:
+    '__root__' | '/' | '/bajtlove-granie' | '/galeria' | '/o-nas' | '/projekty'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BajtloveGranieRoute: typeof BajtloveGranieRoute
+  GaleriaRoute: typeof GaleriaRoute
   ONasRoute: typeof ONasRoute
   ProjektyRoute: typeof ProjektyRoute
 }
@@ -83,6 +94,13 @@ declare module '@tanstack/react-router' {
       path: '/bajtlove-granie'
       fullPath: '/bajtlove-granie'
       preLoaderRoute: typeof BajtloveGranieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galeria': {
+      id: '/galeria'
+      path: '/galeria'
+      fullPath: '/galeria'
+      preLoaderRoute: typeof GaleriaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/o-nas': {
@@ -105,6 +123,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BajtloveGranieRoute: BajtloveGranieRoute,
+  GaleriaRoute: GaleriaRoute,
   ONasRoute: ONasRoute,
   ProjektyRoute: ProjektyRoute,
 }

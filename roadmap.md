@@ -35,3 +35,10 @@
 - [x] Dane fundacji: KRS 0001144183, NIP 6312727778, REGON 540417288, adres ul. Zwycięstwa 1, 44-100 Gliwice, zarząd (Małgorzata Kramarz, Dominika Kocur)
 - [ ] Pozostałe dane fundacji: konto bankowe, email, telefon
 - [x] Podpisy do zdjęcia zarządu (Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu)
+
+### Odświeżenie nawigacji i kolorystyki
+- [ ] Dodać magentę do palety i zastosować ją jako żywy akcent
+- [ ] Zmienić górne menu na: O nas, Co robimy, Projekty, Aktualności, Galeria, Wesprzyj nas, Kontakt
+- [ ] Dodać brakujące strony docelowe dla nowych pozycji menu
+- [ ] Dodać w stopce: KRS, Statut, Sprawozdania, Polityka prywatności, Kontakt
+- [ ] Sprawdzić układ na komputerze i telefonie

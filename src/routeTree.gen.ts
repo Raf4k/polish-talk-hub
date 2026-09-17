@@ -10,14 +10,27 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AktualnosciRouteImport } from './routes/aktualnosci'
 import { Route as BajtloveGranieRouteImport } from './routes/bajtlove-granie'
+import { Route as CoRobimyRouteImport } from './routes/co-robimy'
 import { Route as GaleriaRouteImport } from './routes/galeria'
+import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as KrsRouteImport } from './routes/krs'
 import { Route as ONasRouteImport } from './routes/o-nas'
+import { Route as PolitykaPrywatnosciRouteImport } from './routes/polityka-prywatnosci'
 import { Route as ProjektyRouteImport } from './routes/projekty'
+import { Route as SprawozdaniaRouteImport } from './routes/sprawozdania'
+import { Route as StatutRouteImport } from './routes/statut'
+import { Route as WesprzyjNasRouteImport } from './routes/wesprzyj-nas'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AktualnosciRoute = AktualnosciRouteImport.update({
+  id: '/aktualnosci',
+  path: '/aktualnosci',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BajtloveGranieRoute = BajtloveGranieRouteImport.update({
@@ -25,9 +38,24 @@ const BajtloveGranieRoute = BajtloveGranieRouteImport.update({
   path: '/bajtlove-granie',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CoRobimyRoute = CoRobimyRouteImport.update({
+  id: '/co-robimy',
+  path: '/co-robimy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GaleriaRoute = GaleriaRouteImport.update({
   id: '/galeria',
   path: '/galeria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KrsRoute = KrsRouteImport.update({
+  id: '/krs',
+  path: '/krs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ONasRoute = ONasRouteImport.update({
@@ -35,49 +63,140 @@ const ONasRoute = ONasRouteImport.update({
   path: '/o-nas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PolitykaPrywatnosciRoute = PolitykaPrywatnosciRouteImport.update({
+  id: '/polityka-prywatnosci',
+  path: '/polityka-prywatnosci',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProjektyRoute = ProjektyRouteImport.update({
   id: '/projekty',
   path: '/projekty',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SprawozdaniaRoute = SprawozdaniaRouteImport.update({
+  id: '/sprawozdania',
+  path: '/sprawozdania',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StatutRoute = StatutRouteImport.update({
+  id: '/statut',
+  path: '/statut',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WesprzyjNasRoute = WesprzyjNasRouteImport.update({
+  id: '/wesprzyj-nas',
+  path: '/wesprzyj-nas',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aktualnosci': typeof AktualnosciRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/co-robimy': typeof CoRobimyRoute
   '/galeria': typeof GaleriaRoute
+  '/kontakt': typeof KontaktRoute
+  '/krs': typeof KrsRoute
   '/o-nas': typeof ONasRoute
+  '/polityka-prywatnosci': typeof PolitykaPrywatnosciRoute
   '/projekty': typeof ProjektyRoute
+  '/sprawozdania': typeof SprawozdaniaRoute
+  '/statut': typeof StatutRoute
+  '/wesprzyj-nas': typeof WesprzyjNasRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aktualnosci': typeof AktualnosciRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/co-robimy': typeof CoRobimyRoute
   '/galeria': typeof GaleriaRoute
+  '/kontakt': typeof KontaktRoute
+  '/krs': typeof KrsRoute
   '/o-nas': typeof ONasRoute
+  '/polityka-prywatnosci': typeof PolitykaPrywatnosciRoute
   '/projekty': typeof ProjektyRoute
+  '/sprawozdania': typeof SprawozdaniaRoute
+  '/statut': typeof StatutRoute
+  '/wesprzyj-nas': typeof WesprzyjNasRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aktualnosci': typeof AktualnosciRoute
   '/bajtlove-granie': typeof BajtloveGranieRoute
+  '/co-robimy': typeof CoRobimyRoute
   '/galeria': typeof GaleriaRoute
+  '/kontakt': typeof KontaktRoute
+  '/krs': typeof KrsRoute
   '/o-nas': typeof ONasRoute
+  '/polityka-prywatnosci': typeof PolitykaPrywatnosciRoute
   '/projekty': typeof ProjektyRoute
+  '/sprawozdania': typeof SprawozdaniaRoute
+  '/statut': typeof StatutRoute
+  '/wesprzyj-nas': typeof WesprzyjNasRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bajtlove-granie' | '/galeria' | '/o-nas' | '/projekty'
+  fullPaths:
+    | '/'
+    | '/aktualnosci'
+    | '/bajtlove-granie'
+    | '/co-robimy'
+    | '/galeria'
+    | '/kontakt'
+    | '/krs'
+    | '/o-nas'
+    | '/polityka-prywatnosci'
+    | '/projekty'
+    | '/sprawozdania'
+    | '/statut'
+    | '/wesprzyj-nas'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bajtlove-granie' | '/galeria' | '/o-nas' | '/projekty'
+  to:
+    | '/'
+    | '/aktualnosci'
+    | '/bajtlove-granie'
+    | '/co-robimy'
+    | '/galeria'
+    | '/kontakt'
+    | '/krs'
+    | '/o-nas'
+    | '/polityka-prywatnosci'
+    | '/projekty'
+    | '/sprawozdania'
+    | '/statut'
+    | '/wesprzyj-nas'
   id:
-    '__root__' | '/' | '/bajtlove-granie' | '/galeria' | '/o-nas' | '/projekty'
+    | '__root__'
+    | '/'
+    | '/aktualnosci'
+    | '/bajtlove-granie'
+    | '/co-robimy'
+    | '/galeria'
+    | '/kontakt'
+    | '/krs'
+    | '/o-nas'
+    | '/polityka-prywatnosci'
+    | '/projekty'
+    | '/sprawozdania'
+    | '/statut'
+    | '/wesprzyj-nas'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AktualnosciRoute: typeof AktualnosciRoute
   BajtloveGranieRoute: typeof BajtloveGranieRoute
+  CoRobimyRoute: typeof CoRobimyRoute
   GaleriaRoute: typeof GaleriaRoute
+  KontaktRoute: typeof KontaktRoute
+  KrsRoute: typeof KrsRoute
   ONasRoute: typeof ONasRoute
+  PolitykaPrywatnosciRoute: typeof PolitykaPrywatnosciRoute
   ProjektyRoute: typeof ProjektyRoute
+  SprawozdaniaRoute: typeof SprawozdaniaRoute
+  StatutRoute: typeof StatutRoute
+  WesprzyjNasRoute: typeof WesprzyjNasRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -89,11 +208,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/aktualnosci': {
+      id: '/aktualnosci'
+      path: '/aktualnosci'
+      fullPath: '/aktualnosci'
+      preLoaderRoute: typeof AktualnosciRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bajtlove-granie': {
       id: '/bajtlove-granie'
       path: '/bajtlove-granie'
       fullPath: '/bajtlove-granie'
       preLoaderRoute: typeof BajtloveGranieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/co-robimy': {
+      id: '/co-robimy'
+      path: '/co-robimy'
+      fullPath: '/co-robimy'
+      preLoaderRoute: typeof CoRobimyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/galeria': {
@@ -103,11 +236,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GaleriaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/krs': {
+      id: '/krs'
+      path: '/krs'
+      fullPath: '/krs'
+      preLoaderRoute: typeof KrsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/o-nas': {
       id: '/o-nas'
       path: '/o-nas'
       fullPath: '/o-nas'
       preLoaderRoute: typeof ONasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/polityka-prywatnosci': {
+      id: '/polityka-prywatnosci'
+      path: '/polityka-prywatnosci'
+      fullPath: '/polityka-prywatnosci'
+      preLoaderRoute: typeof PolitykaPrywatnosciRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projekty': {
@@ -117,15 +271,44 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjektyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sprawozdania': {
+      id: '/sprawozdania'
+      path: '/sprawozdania'
+      fullPath: '/sprawozdania'
+      preLoaderRoute: typeof SprawozdaniaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/statut': {
+      id: '/statut'
+      path: '/statut'
+      fullPath: '/statut'
+      preLoaderRoute: typeof StatutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wesprzyj-nas': {
+      id: '/wesprzyj-nas'
+      path: '/wesprzyj-nas'
+      fullPath: '/wesprzyj-nas'
+      preLoaderRoute: typeof WesprzyjNasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AktualnosciRoute: AktualnosciRoute,
   BajtloveGranieRoute: BajtloveGranieRoute,
+  CoRobimyRoute: CoRobimyRoute,
   GaleriaRoute: GaleriaRoute,
+  KontaktRoute: KontaktRoute,
+  KrsRoute: KrsRoute,
   ONasRoute: ONasRoute,
+  PolitykaPrywatnosciRoute: PolitykaPrywatnosciRoute,
   ProjektyRoute: ProjektyRoute,
+  SprawozdaniaRoute: SprawozdaniaRoute,
+  StatutRoute: StatutRoute,
+  WesprzyjNasRoute: WesprzyjNasRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

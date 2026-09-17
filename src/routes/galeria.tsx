@@ -16,6 +16,7 @@ export const Route = createFileRoute("/galeria")({
           "Galeria Fundacji Przez Pryzmat Dźwięku.",
       },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/galeria" }],
   }),

@@ -31,6 +31,7 @@ export const Route = createFileRoute("/")({
           "Wierzymy, że muzyka zmienia sposób, w jaki patrzymy na świat i siebie nawzajem.",
       },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -65,9 +66,9 @@ function HeroCarousel() {
           loading={i === 0 ? "eager" : "lazy"}
         />
       ))}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-hero-overlay" />
       <div className="relative z-10 px-6 text-center">
-        <h1 className="mx-auto max-w-4xl font-display text-3xl font-semibold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+        <h1 className="mx-auto max-w-4xl font-display text-3xl font-semibold leading-tight tracking-tight text-hero-foreground md:text-5xl lg:text-6xl">
           WIERZYMY, ŻE MUZYKA ZMIENIA SPOSÓB W JAKI PATRZYMY NA ŚWIAT I SIEBIE NAWZAJEM
         </h1>
       </div>
@@ -83,8 +84,8 @@ function HeroCarousel() {
             className={
               "h-2 rounded-full transition-all duration-300 " +
               (i === index
-                ? "w-8 bg-white"
-                : "w-2 bg-white/50 hover:bg-white/80")
+                ? "w-8 bg-hero-foreground"
+                : "w-2 bg-hero-foreground/50 hover:bg-hero-foreground/80")
             }
           />
         ))}

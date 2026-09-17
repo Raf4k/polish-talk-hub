@@ -171,7 +171,6 @@ function Header() {
             </Link>
           ))}
         </nav>
-        </div>
       </div>
     </header>
   );

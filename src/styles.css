@@ -37,6 +37,8 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
+  --color-hero-overlay: var(--hero-overlay);
+  --color-hero-foreground: var(--hero-foreground);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -75,6 +77,8 @@
   --border: oklch(0.88 0.035 220);
   --input: oklch(0.88 0.035 220);
   --ring: oklch(0.67 0.15 342);
+  --hero-overlay: oklch(0.16 0.025 220 / 55%);
+  --hero-foreground: oklch(0.99 0.006 339);
   --chart-1: oklch(0.67 0.15 342);
   --chart-2: oklch(0.72 0.09 206);
   --chart-3: oklch(0.82 0.14 66);
@@ -110,6 +114,8 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.76 0.13 342);
+  --hero-overlay: oklch(0.12 0.025 220 / 62%);
+  --hero-foreground: oklch(0.99 0.006 339);
   --chart-1: oklch(0.76 0.13 342);
   --chart-2: oklch(0.66 0.08 206);
   --chart-3: oklch(0.78 0.13 66);

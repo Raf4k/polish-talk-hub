@@ -17,6 +17,7 @@ export const Route = createFileRoute("/o-nas")({
           "Poznaj Fundację Przez Pryzmat Dźwięku. Tworzymy przestrzeń, w której kultura, muzyka i sztuka spotykają się z życiem rodzinnym.",
       },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/o-nas" }],
   }),

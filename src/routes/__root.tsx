@@ -172,6 +172,11 @@ function Header() {
           ))}
         </nav>
       </div>
+      <div aria-hidden="true" className="grid h-1 grid-cols-3">
+        <span className="bg-primary" />
+        <span className="bg-secondary" />
+        <span className="bg-accent" />
+      </div>
     </header>
   );
 }

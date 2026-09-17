@@ -113,49 +113,30 @@ function Header() {
     { name: "LinkedIn", href: "#", Icon: LinkedInIcon },
   ];
 
+  const navigation = [
+    { label: "O nas", to: "/o-nas" },
+    { label: "Co robimy", to: "/co-robimy" },
+    { label: "Projekty", to: "/projekty" },
+    { label: "Aktualności", to: "/aktualnosci" },
+    { label: "Galeria", to: "/galeria" },
+    { label: "Wesprzyj nas", to: "/wesprzyj-nas" },
+    { label: "Kontakt", to: "/kontakt" },
+  ] as const;
+
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <nav className="flex items-center gap-6">
+      <div className="mx-auto max-w-7xl px-4 py-3 lg:px-6">
+        <div className="flex items-center justify-between gap-4">
           <Link
             to="/"
-            className="font-display text-lg font-semibold text-foreground"
+            className="max-w-[15rem] font-display text-base font-semibold leading-tight text-foreground transition-colors hover:text-primary lg:max-w-none lg:text-lg"
             activeProps={{ className: "text-primary" }}
             activeOptions={{ exact: true }}
           >
-            Pryzmat Dźwięku
+            Fundacja Przez Pryzmat Dźwięku
           </Link>
-          <Link
-            to="/o-nas"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            activeProps={{ className: "text-primary font-medium" }}
-          >
-            O nas
-          </Link>
-          <Link
-            to="/projekty"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            activeProps={{ className: "text-primary font-medium" }}
-          >
-            Projekty
-          </Link>
-          <Link
-            to="/galeria"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            activeProps={{ className: "text-primary font-medium" }}
-          >
-            Galeria
-          </Link>
-          <Link
-            to="/bajtlove-granie"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            activeProps={{ className: "text-primary font-medium" }}
-          >
-            BajtLOVE Granie
-          </Link>
-        </nav>
-        <div className="flex items-center gap-6">
-          <div className="flex items-center gap-3">
+          <div className="flex shrink-0 items-center gap-3">
+          <div className="hidden items-center gap-3 sm:flex">
             {socialLinks.map(({ name, href, Icon }) => (
               <a
                 key={name}
@@ -174,8 +155,22 @@ function Header() {
             alt="Logo Fundacji Przez Pryzmat Dźwięku"
             width={48}
             height={48}
-            className="h-12 w-12 object-contain"
+              className="h-11 w-11 object-contain"
           />
+          </div>
+        </div>
+        <nav aria-label="Główna nawigacja" className="mt-3 flex gap-5 overflow-x-auto border-t border-border/70 pt-3 text-xs font-semibold uppercase sm:justify-center sm:text-sm">
+          {navigation.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className="shrink-0 whitespace-nowrap text-muted-foreground transition-colors hover:text-primary"
+              activeProps={{ className: "text-primary" }}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
         </div>
       </div>
     </header>
@@ -183,6 +178,14 @@ function Header() {
 }
 
 function Footer() {
+  const documentLinks = [
+    { label: "KRS", to: "/krs" },
+    { label: "Statut", to: "/statut" },
+    { label: "Sprawozdania", to: "/sprawozdania" },
+    { label: "Polityka prywatności", to: "/polityka-prywatnosci" },
+    { label: "Kontakt", to: "/kontakt" },
+  ] as const;
+
   return (
     <footer className="border-t border-border bg-muted">
       <div className="mx-auto max-w-5xl px-6 py-12">
@@ -206,7 +209,17 @@ function Footer() {
             <p className="pt-2"><span className="font-medium text-foreground">Zarząd:</span> Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu</p>
           </div>
         </div>
-        <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
+        <nav aria-label="Dokumenty i informacje" className="mt-8 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 border-t border-border pt-6 text-sm">
+          {documentLinks.map((item, index) => (
+            <span key={item.to} className="flex items-center gap-3">
+              {index > 0 && <span aria-hidden="true" className="text-primary">|</span>}
+              <Link to={item.to} className="text-muted-foreground transition-colors hover:text-primary">
+                {item.label}
+              </Link>
+            </span>
+          ))}
+        </nav>
+        <div className="mt-6 text-center text-xs text-muted-foreground">
           &copy; 2026 Fundacja Przez Pryzmat Dźwięku. Wszelkie prawa zastrzeżone.
         </div>
       </div>

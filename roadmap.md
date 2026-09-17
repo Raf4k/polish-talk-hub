@@ -1,4 +1,4 @@
-# Roadmap — Fundacja Pryzmat Dźwięku
+# Roadmap — Fundacja Przez Pryzmat Dźwięku
 
 ## Strona internetowa fundacji
 
@@ -37,8 +37,9 @@
 - [x] Podpisy do zdjęcia zarządu (Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu)
 
 ### Odświeżenie nawigacji i kolorystyki
-- [ ] Dodać magentę do palety i zastosować ją jako żywy akcent
+- [ ] Zastosować pastelową paletę: pudrowa magenta, pastelowy petrol i cytrusowy pomarańcz
 - [ ] Zmienić górne menu na: O nas, Co robimy, Projekty, Aktualności, Galeria, Wesprzyj nas, Kontakt
 - [ ] Dodać brakujące strony docelowe dla nowych pozycji menu
 - [ ] Dodać w stopce: KRS, Statut, Sprawozdania, Polityka prywatności, Kontakt
 - [ ] Sprawdzić układ na komputerze i telefonie
+- [ ] Pokazywać pełną nazwę Fundacja Przez Pryzmat Dźwięku w nagłówku

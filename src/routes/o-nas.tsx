@@ -30,29 +30,53 @@ function ONas() {
       <h1 className="font-display text-4xl font-semibold text-foreground md:text-5xl">
         O nas
       </h1>
+
       <p className="mt-6 text-lg leading-relaxed text-foreground md:text-xl">
-        Fundacja Przez Pryzmat Dźwięku tworzy przestrzeń, w której kultura, muzyka i
-        sztuka spotykają się z życiem rodzinnym. Inspirujemy, rozwijamy
-        wrażliwość i budujemy relacje, pokazując, że wspólne przeżywanie sztuki
-        może być początkiem ważnej rozmowy, odkrywania siebie i bycia razem.
+        Wszystko zaczęło się od macierzyństwa.
       </p>
+      <p className="mt-6 text-lg leading-relaxed text-foreground md:text-xl">
+        W 2024 roku powstała przestrzeń, w której muzyka i sztuka spotykają się z życiem rodzinnym. Wspólne doświadczenie i przeżywanie sztuki jest początkiem ważnej rozmowy, odkrywania siebie i bycia razem.
+      </p>
+
       <blockquote className="mt-12 border-l-4 border-primary py-2 pl-6">
         <p className="font-display text-xl font-medium italic text-foreground md:text-2xl">
-          Przez Pryzmat Dźwięku patrzymy na świat trochę inaczej.
-          <br />
-          Słuchamy uważniej. Patrzymy głębiej. Tworzymy razem.
+          „Kiedy zostałam mamą, moje spojrzenie na świat zmieniło się. Zaczęłam na nowo przyglądać się temu, co naprawdę ważne — bliskości, relacjom, obecności i temu, jaki świat chcemy tworzyć dla naszych dzieci.
         </p>
+        <p className="mt-4 font-display text-xl font-medium italic text-foreground md:text-2xl">
+          Jako artystka poczułam, że chcę ten świat budować poprzez muzykę i sztukę. Tak powstała idea Fundacji Przez Pryzmat Dźwięku — z potrzeby tworzenia przestrzeni, w której rodziny mogą być razem, doświadczać, tworzyć, słuchać i rozwijać się."
+        </p>
+        <footer className="mt-4 text-base font-normal not-italic text-muted-foreground">
+          — Dominika Kocur
+        </footer>
       </blockquote>
+
       <p className="mt-12 text-lg leading-relaxed text-foreground md:text-xl">
-        Prowadzimy działania artystyczne, edukacyjne i kulturalne dla dzieci,
-        rodziców i całych rodzin. Organizujemy warsztaty, wydarzenia, koncerty i
-        projekty, które pozwalają doświadczać sztuki nie tylko jako odbiorcy,
-        ale przede wszystkim jako uczestnika i twórcy.
+        Wierzymy, że sztuka może wychowywać, uwrażliwiać i łączyć. Wspólne muzykowanie może budować bliskość, a kontakt z kulturą może zostać z dzieckiem na całe życie. Wierzę też, że w trosce o rodzinę, nie możemy zapominać o rodzicach, o ich potrzebach, rozwoju i własnym świecie.
       </p>
       <p className="mt-6 text-lg leading-relaxed text-foreground md:text-xl">
-        Bo wierzymy, że muzyka to coś więcej niż dźwięki. Sztuka to coś więcej
-        niż obraz. A wspólne tworzenie to coś więcej niż zajęcia. To sposób na
-        budowanie więzi. Rozwijanie wyobraźni. Odkrywanie własnego głosu.
+        Tworzymy ambitne i jakościowe projekty artystyczne, warsztaty rozwojowe i kreatywne, działania arteterapeutyczne, muzykoterapię, rodzinne muzykowanie oraz projekty związane z kulturą rodzimą i regionalną.
+      </p>
+
+      <blockquote className="mt-12 border-l-4 border-primary py-2 pl-6">
+        <p className="font-display text-xl font-medium italic text-foreground md:text-2xl">
+          „To fundacja tworzona z serca — z doświadczenia, które najpierw przeżyłam sama, a dziś chcę podać dalej."
+        </p>
+        <footer className="mt-4 text-base font-normal not-italic text-muted-foreground">
+          — Dominika Kocur
+        </footer>
+      </blockquote>
+
+      <p className="mt-12 text-lg leading-relaxed text-foreground md:text-xl">
+        Chcemy, by sztuka była nie tylko wydarzeniem, ale sposobem na bycie bliżej siebie.
+      </p>
+      <p className="mt-6 font-display text-2xl font-semibold text-primary md:text-3xl">
+        Nasz cel?
+      </p>
+      <p className="mt-2 font-display text-2xl font-semibold text-foreground md:text-3xl">
+        Słuchać. Tworzyć. Łączyć. Inspirować.
+      </p>
+      <p className="mt-2 font-display text-2xl font-semibold text-primary md:text-3xl">
+        Przez Pryzmat Dźwięku.
       </p>
 
       {/* Zdjęcie zarządu */}

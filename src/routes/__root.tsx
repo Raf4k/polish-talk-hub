@@ -129,12 +129,11 @@ function Header() {
         <div className="flex items-center justify-between gap-4">
           <Link
             to="/"
-            className="max-w-[15rem] font-display text-base font-semibold leading-tight text-foreground transition-colors hover:text-primary lg:max-w-none lg:text-lg"
+            className="font-display text-base font-semibold leading-tight text-foreground transition-colors hover:text-primary lg:text-lg"
             activeProps={{ className: "text-primary" }}
             activeOptions={{ exact: true }}
           >
-            <span className="block">Fundacja</span>
-            <span className="block whitespace-nowrap">Przez Pryzmat Dźwięku</span>
+            <span className="whitespace-nowrap">Fundacja Przez Pryzmat Dźwięku</span>
           </Link>
           <div className="flex shrink-0 items-center gap-3">
           <div className="hidden items-center gap-3 sm:flex">

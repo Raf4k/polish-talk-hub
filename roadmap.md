@@ -43,3 +43,12 @@
 - [x] Dodać w stopce: KRS, Statut, Sprawozdania, Polityka prywatności, Kontakt
 - [x] Sprawdzić układ na komputerze i telefonie
 - [x] Pokazywać pełną nazwę Fundacja Przez Pryzmat Dźwięku w nagłówku
+
+### Dane i dokumenty — 18.09.2026
+- [ ] Złamać nazwę w nagłówku: „Fundacja” nad „Przez Pryzmat Dźwięku”
+- [ ] Dodać konto BNP PARIBAS Polska: 49 1600 1462 1712 7614 7000 0001
+- [ ] Zastąpić „Aktualności” pozycją „BajtLOVE Granie”
+- [ ] Udostępnić przesłany statut fundacji
+- [ ] Ułożyć Dominikę Kocur pod Małgorzatą Kramarz w danych zarządu
+- [ ] Zmienić podpis zdjęcia zarządu na wskazaną kolejność osób
+- [ ] Podłączyć Facebook i Instagram

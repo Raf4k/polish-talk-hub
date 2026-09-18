@@ -119,6 +119,7 @@ function Header() {
     { label: "Projekty", to: "/projekty" },
     { label: "BajtLOVE Granie", to: "/bajtlove-granie" },
     { label: "Galeria", to: "/galeria" },
+    { label: "Wolontariat", to: "/wolontariat" },
     { label: "Wesprzyj nas", to: "/wesprzyj-nas" },
     { label: "Kontakt", to: "/kontakt" },
   ] as const;

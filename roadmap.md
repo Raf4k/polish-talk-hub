@@ -31,9 +31,9 @@
 ### Oczekuje na treść od użytkownika
 - [ ] Treść strony "O nas" (pełna)
 - [ ] Treść strony "BajtLOVE Granie"
-- [ ] URL-e do mediów społecznościowych
+- [ ] URL-e do mediów społecznościowych (YouTube i LinkedIn)
 - [x] Dane fundacji: KRS 0001144183, NIP 6312727778, REGON 540417288, adres ul. Zwycięstwa 1, 44-100 Gliwice, zarząd (Małgorzata Kramarz, Dominika Kocur)
-- [ ] Pozostałe dane fundacji: konto bankowe, email, telefon
+- [ ] Pozostałe dane fundacji: email, telefon
 - [x] Podpisy do zdjęcia zarządu (Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu)
 
 ### Odświeżenie nawigacji i kolorystyki
@@ -43,3 +43,12 @@
 - [x] Dodać w stopce: KRS, Statut, Sprawozdania, Polityka prywatności, Kontakt
 - [x] Sprawdzić układ na komputerze i telefonie
 - [x] Pokazywać pełną nazwę Fundacja Przez Pryzmat Dźwięku w nagłówku
+
+### Dane i dokumenty — 18.09.2026
+- [x] Złamać nazwę w nagłówku: „Fundacja” nad „Przez Pryzmat Dźwięku”
+- [x] Dodać konto BNP PARIBAS Polska: 49 1600 1462 1712 7614 7000 0001
+- [x] Zastąpić „Aktualności” pozycją „BajtLOVE Granie”
+- [x] Udostępnić przesłany statut fundacji
+- [x] Ułożyć Dominikę Kocur pod Małgorzatą Kramarz w danych zarządu
+- [x] Zmienić podpis zdjęcia zarządu na wskazaną kolejność osób
+- [x] Podłączyć Facebook i Instagram

@@ -208,7 +208,7 @@ function Footer() {
             <p><span className="font-medium text-foreground">NIP:</span> 6312727778</p>
             <p><span className="font-medium text-foreground">REGON:</span> 540417288</p>
             <div><span className="font-medium text-foreground">Konto bankowe:</span><p>BNP PARIBAS Polska</p><p>49 1600 1462 1712 7614 7000 0001</p></div>
-            <p><span className="font-medium text-foreground">Email:</span> [do uzupełnienia]</p>
+            <p><span className="font-medium text-foreground">Email:</span> przezpryzmatdzwieku@gmail.com</p>
             <p><span className="font-medium text-foreground">Telefon:</span> [do uzupełnienia]</p>
             <div className="pt-2"><span className="font-medium text-foreground">Zarząd:</span><p>Małgorzata Kramarz — Przewodnicząca Zarządu</p><p>Dominika Kocur — Wiceprzewodnicząca Zarządu</p></div>
           </div>

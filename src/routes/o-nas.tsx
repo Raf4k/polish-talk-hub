@@ -63,8 +63,8 @@ function ONas() {
           loading="lazy"
           className="mx-auto w-full max-w-md rounded-lg object-cover shadow-lg"
         />
-        <p className="mt-4 text-center text-sm text-muted-foreground">
-          Zarząd Fundacji Przez Pryzmat Dźwięku: Małgorzata Kramarz (Przewodnicząca Zarządu) i Dominika Kocur (Wiceprzewodnicząca Zarządu)
+        <p className="mt-4 text-center text-xs lowercase text-muted-foreground">
+          dominika kocur po lewej, małgorzata kramarz po prawej
         </p>
       </div>
     </section>

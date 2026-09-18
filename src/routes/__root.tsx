@@ -107,8 +107,8 @@ function LinkedInIcon() {
 
 function Header() {
   const socialLinks = [
-    { name: "Facebook", href: "#", Icon: FacebookIcon },
-    { name: "Instagram", href: "#", Icon: InstagramIcon },
+    { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61571535179694", Icon: FacebookIcon },
+    { name: "Instagram", href: "https://www.instagram.com/bajtlove_granie/", Icon: InstagramIcon },
     { name: "YouTube", href: "#", Icon: YouTubeIcon },
     { name: "LinkedIn", href: "#", Icon: LinkedInIcon },
   ];
@@ -117,7 +117,7 @@ function Header() {
     { label: "O nas", to: "/o-nas" },
     { label: "Co robimy", to: "/co-robimy" },
     { label: "Projekty", to: "/projekty" },
-    { label: "Aktualności", to: "/aktualnosci" },
+    { label: "BajtLOVE Granie", to: "/bajtlove-granie" },
     { label: "Galeria", to: "/galeria" },
     { label: "Wesprzyj nas", to: "/wesprzyj-nas" },
     { label: "Kontakt", to: "/kontakt" },
@@ -133,7 +133,8 @@ function Header() {
             activeProps={{ className: "text-primary" }}
             activeOptions={{ exact: true }}
           >
-            Fundacja Przez Pryzmat Dźwięku
+            <span className="block">Fundacja</span>
+            <span className="block whitespace-nowrap">Przez Pryzmat Dźwięku</span>
           </Link>
           <div className="flex shrink-0 items-center gap-3">
           <div className="hidden items-center gap-3 sm:flex">
@@ -207,10 +208,10 @@ function Footer() {
             <p><span className="font-medium text-foreground">KRS:</span> 0001144183</p>
             <p><span className="font-medium text-foreground">NIP:</span> 6312727778</p>
             <p><span className="font-medium text-foreground">REGON:</span> 540417288</p>
-            <p><span className="font-medium text-foreground">Konto bankowe:</span> [do uzupełnienia]</p>
+            <p><span className="font-medium text-foreground">Konto bankowe:</span> BNP PARIBAS Polska<br /><span className="ml-0 md:ml-[7.25rem]">49 1600 1462 1712 7614 7000 0001</span></p>
             <p><span className="font-medium text-foreground">Email:</span> [do uzupełnienia]</p>
             <p><span className="font-medium text-foreground">Telefon:</span> [do uzupełnienia]</p>
-            <p className="pt-2"><span className="font-medium text-foreground">Zarząd:</span> Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu</p>
+            <div className="pt-2"><span className="font-medium text-foreground">Zarząd:</span><p>Małgorzata Kramarz — Przewodnicząca Zarządu</p><p>Dominika Kocur — Wiceprzewodnicząca Zarządu</p></div>
           </div>
         </div>
         <nav aria-label="Dokumenty i informacje" className="mt-8 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 border-t border-border pt-6 text-sm">

@@ -109,7 +109,7 @@ function Header() {
   const socialLinks = [
     { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61571535179694", Icon: FacebookIcon },
     { name: "Instagram", href: "https://www.instagram.com/bajtlove_granie/", Icon: InstagramIcon },
-    { name: "YouTube", href: "#", Icon: YouTubeIcon },
+    { name: "YouTube", href: "https://www.youtube.com/channel/UCTHvvJqrojW9TPaGc4-mdiQ", Icon: YouTubeIcon },
     { name: "LinkedIn", href: "#", Icon: LinkedInIcon },
   ];
 

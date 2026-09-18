@@ -22,6 +22,7 @@ import { Route as ProjektyRouteImport } from './routes/projekty'
 import { Route as SprawozdaniaRouteImport } from './routes/sprawozdania'
 import { Route as StatutRouteImport } from './routes/statut'
 import { Route as WesprzyjNasRouteImport } from './routes/wesprzyj-nas'
+import { Route as WolontariatRouteImport } from './routes/wolontariat'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -88,6 +89,11 @@ const WesprzyjNasRoute = WesprzyjNasRouteImport.update({
   path: '/wesprzyj-nas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WolontariatRoute = WolontariatRouteImport.update({
+  id: '/wolontariat',
+  path: '/wolontariat',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -103,6 +109,7 @@ export interface FileRoutesByFullPath {
   '/sprawozdania': typeof SprawozdaniaRoute
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
+  '/wolontariat': typeof WolontariatRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -118,6 +125,7 @@ export interface FileRoutesByTo {
   '/sprawozdania': typeof SprawozdaniaRoute
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
+  '/wolontariat': typeof WolontariatRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -134,6 +142,7 @@ export interface FileRoutesById {
   '/sprawozdania': typeof SprawozdaniaRoute
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
+  '/wolontariat': typeof WolontariatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -151,6 +160,7 @@ export interface FileRouteTypes {
     | '/sprawozdania'
     | '/statut'
     | '/wesprzyj-nas'
+    | '/wolontariat'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -166,6 +176,7 @@ export interface FileRouteTypes {
     | '/sprawozdania'
     | '/statut'
     | '/wesprzyj-nas'
+    | '/wolontariat'
   id:
     | '__root__'
     | '/'
@@ -181,6 +192,7 @@ export interface FileRouteTypes {
     | '/sprawozdania'
     | '/statut'
     | '/wesprzyj-nas'
+    | '/wolontariat'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -197,6 +209,7 @@ export interface RootRouteChildren {
   SprawozdaniaRoute: typeof SprawozdaniaRoute
   StatutRoute: typeof StatutRoute
   WesprzyjNasRoute: typeof WesprzyjNasRoute
+  WolontariatRoute: typeof WolontariatRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -292,6 +305,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WesprzyjNasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/wolontariat': {
+      id: '/wolontariat'
+      path: '/wolontariat'
+      fullPath: '/wolontariat'
+      preLoaderRoute: typeof WolontariatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -309,6 +329,7 @@ const rootRouteChildren: RootRouteChildren = {
   SprawozdaniaRoute: SprawozdaniaRoute,
   StatutRoute: StatutRoute,
   WesprzyjNasRoute: WesprzyjNasRoute,
+  WolontariatRoute: WolontariatRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

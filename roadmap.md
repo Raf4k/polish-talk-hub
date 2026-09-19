@@ -52,3 +52,9 @@
 - [x] Ułożyć Dominikę Kocur pod Małgorzatą Kramarz w danych zarządu
 - [x] Zmienić podpis zdjęcia zarządu na wskazaną kolejność osób
 - [x] Podłączyć Facebook i Instagram
+
+### Wygląd tekstów — 19.09.2026
+- [ ] Wyjustować dłuższe teksty we wszystkich zakładkach
+- [ ] Zmienić tło strony z różowego na kremowe
+- [ ] Delikatnie zmniejszyć tekst główny
+- [ ] Zmienić krój pisma po wyborze użytkowniczki

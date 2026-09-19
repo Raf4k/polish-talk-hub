@@ -55,6 +55,6 @@
 
 ### Wygląd tekstów — 19.09.2026
 - [x] Wyjustować dłuższe teksty we wszystkich zakładkach
-- [x] Zmienić tło strony z różowego na kremowe
+- [ ] Zmienić tło strony z kremowego na białe
 - [x] Delikatnie zmniejszyć tekst główny
-- [ ] Zmienić krój pisma po wyborze użytkowniczki
+- [ ] Zmienić krój pisma na Cormorant Garamond + Karla

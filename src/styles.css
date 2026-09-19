@@ -58,11 +58,11 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.985 0.012 339);
+  --background: oklch(0.975 0.022 88);
   --foreground: oklch(0.28 0.035 220);
-  --card: oklch(0.995 0.006 339);
+  --card: oklch(0.99 0.014 88);
   --card-foreground: oklch(0.28 0.035 220);
-  --popover: oklch(0.995 0.006 339);
+  --popover: oklch(0.99 0.014 88);
   --popover-foreground: oklch(0.28 0.035 220);
   --primary: oklch(0.67 0.15 342);
   --primary-foreground: oklch(0.99 0.006 339);
@@ -145,4 +145,13 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
   }
+}
+
+main section p:not(.text-center):not(.uppercase) {
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+main section p[class*="text-lg"] {
+  font-size: 1.0625rem;
 }

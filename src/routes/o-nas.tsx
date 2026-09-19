@@ -35,7 +35,7 @@ function ONas() {
         Wszystko zaczęło się od macierzyństwa.
       </p>
       <p className="mt-6 text-lg leading-relaxed text-foreground md:text-xl">
-        W 2024 roku powstała przestrzeń naszej fundacji, w której muzyka i sztuka spotykają się z życiem rodzinnym. Wspólne doświadczenie i przeżywanie sztuki jest początkiem ważnej rozmowy, odkrywania siebie i bycia razem.
+        W 2024 roku powstała fundacja, w której muzyka i sztuka spotykają się z życiem rodzinnym. Wspólne doświadczenie i przeżywanie sztuki jest początkiem ważnej rozmowy, odkrywania siebie i bycia razem.
       </p>
 
       <blockquote className="mt-12 border-l-4 border-primary py-2 pl-6">

@@ -58,3 +58,9 @@
 - [x] Zmienić tło strony z kremowego na białe
 - [x] Delikatnie zmniejszyć tekst główny
 - [x] Zmienić krój pisma na Cormorant Garamond + Karla
+
+### BajtLOVE Granie — 20.09.2026
+- [x] Zmienić zielone tło stopki na pastelowe brzoskwiniowe
+- [x] Podzielić BajtLOVE Granie na podstrony: Koncerty, Warsztaty umuzykalniające, Songwriting i produkcja muzyki
+- [x] Dodać pełne treści trzech obszarów
+- [x] Dodać cztery zdjęcia do strony Koncerty

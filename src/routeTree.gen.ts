@@ -24,6 +24,7 @@ import { Route as StatutRouteImport } from './routes/statut'
 import { Route as WesprzyjNasRouteImport } from './routes/wesprzyj-nas'
 import { Route as WolontariatRouteImport } from './routes/wolontariat'
 import { Route as BajtloveGranieIndexRouteImport } from './routes/bajtlove-granie.index'
+import { Route as BajtloveGranieKoncertyRouteImport } from './routes/bajtlove-granie.koncerty'
 import { Route as BajtloveGranieSongwritingIProdukcjaMuzykiRouteImport } from './routes/bajtlove-granie.songwriting-i-produkcja-muzyki'
 import { Route as BajtloveGranieWarsztatyUmuzykalniajaceRouteImport } from './routes/bajtlove-granie.warsztaty-umuzykalniajace'
 
@@ -102,6 +103,11 @@ const BajtloveGranieIndexRoute = BajtloveGranieIndexRouteImport.update({
   path: '/',
   getParentRoute: () => BajtloveGranieRoute,
 } as any)
+const BajtloveGranieKoncertyRoute = BajtloveGranieKoncertyRouteImport.update({
+  id: '/koncerty',
+  path: '/koncerty',
+  getParentRoute: () => BajtloveGranieRoute,
+} as any)
 const BajtloveGranieSongwritingIProdukcjaMuzykiRoute =
   BajtloveGranieSongwritingIProdukcjaMuzykiRouteImport.update({
     id: '/songwriting-i-produkcja-muzyki',
@@ -130,6 +136,7 @@ export interface FileRoutesByFullPath {
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
   '/wolontariat': typeof WolontariatRoute
+  '/bajtlove-granie/koncerty': typeof BajtloveGranieKoncertyRoute
   '/bajtlove-granie/songwriting-i-produkcja-muzyki': typeof BajtloveGranieSongwritingIProdukcjaMuzykiRoute
   '/bajtlove-granie/warsztaty-umuzykalniajace': typeof BajtloveGranieWarsztatyUmuzykalniajaceRoute
   '/bajtlove-granie/': typeof BajtloveGranieIndexRoute
@@ -148,6 +155,7 @@ export interface FileRoutesByTo {
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
   '/wolontariat': typeof WolontariatRoute
+  '/bajtlove-granie/koncerty': typeof BajtloveGranieKoncertyRoute
   '/bajtlove-granie/songwriting-i-produkcja-muzyki': typeof BajtloveGranieSongwritingIProdukcjaMuzykiRoute
   '/bajtlove-granie/warsztaty-umuzykalniajace': typeof BajtloveGranieWarsztatyUmuzykalniajaceRoute
   '/bajtlove-granie': typeof BajtloveGranieIndexRoute
@@ -168,6 +176,7 @@ export interface FileRoutesById {
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
   '/wolontariat': typeof WolontariatRoute
+  '/bajtlove-granie/koncerty': typeof BajtloveGranieKoncertyRoute
   '/bajtlove-granie/songwriting-i-produkcja-muzyki': typeof BajtloveGranieSongwritingIProdukcjaMuzykiRoute
   '/bajtlove-granie/warsztaty-umuzykalniajace': typeof BajtloveGranieWarsztatyUmuzykalniajaceRoute
   '/bajtlove-granie/': typeof BajtloveGranieIndexRoute
@@ -189,6 +198,7 @@ export interface FileRouteTypes {
     | '/statut'
     | '/wesprzyj-nas'
     | '/wolontariat'
+    | '/bajtlove-granie/koncerty'
     | '/bajtlove-granie/songwriting-i-produkcja-muzyki'
     | '/bajtlove-granie/warsztaty-umuzykalniajace'
     | '/bajtlove-granie/'
@@ -207,6 +217,7 @@ export interface FileRouteTypes {
     | '/statut'
     | '/wesprzyj-nas'
     | '/wolontariat'
+    | '/bajtlove-granie/koncerty'
     | '/bajtlove-granie/songwriting-i-produkcja-muzyki'
     | '/bajtlove-granie/warsztaty-umuzykalniajace'
     | '/bajtlove-granie'
@@ -226,6 +237,7 @@ export interface FileRouteTypes {
     | '/statut'
     | '/wesprzyj-nas'
     | '/wolontariat'
+    | '/bajtlove-granie/koncerty'
     | '/bajtlove-granie/songwriting-i-produkcja-muzyki'
     | '/bajtlove-granie/warsztaty-umuzykalniajace'
     | '/bajtlove-granie/'
@@ -355,6 +367,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BajtloveGranieIndexRouteImport
       parentRoute: typeof BajtloveGranieRoute
     }
+    '/bajtlove-granie/koncerty': {
+      id: '/bajtlove-granie/koncerty'
+      path: '/koncerty'
+      fullPath: '/bajtlove-granie/koncerty'
+      preLoaderRoute: typeof BajtloveGranieKoncertyRouteImport
+      parentRoute: typeof BajtloveGranieRoute
+    }
     '/bajtlove-granie/songwriting-i-produkcja-muzyki': {
       id: '/bajtlove-granie/songwriting-i-produkcja-muzyki'
       path: '/songwriting-i-produkcja-muzyki'
@@ -373,12 +392,14 @@ declare module '@tanstack/react-router' {
 }
 
 interface BajtloveGranieRouteChildren {
+  BajtloveGranieKoncertyRoute: typeof BajtloveGranieKoncertyRoute
   BajtloveGranieSongwritingIProdukcjaMuzykiRoute: typeof BajtloveGranieSongwritingIProdukcjaMuzykiRoute
   BajtloveGranieWarsztatyUmuzykalniajaceRoute: typeof BajtloveGranieWarsztatyUmuzykalniajaceRoute
   BajtloveGranieIndexRoute: typeof BajtloveGranieIndexRoute
 }
 
 const BajtloveGranieRouteChildren: BajtloveGranieRouteChildren = {
+  BajtloveGranieKoncertyRoute: BajtloveGranieKoncertyRoute,
   BajtloveGranieSongwritingIProdukcjaMuzykiRoute:
     BajtloveGranieSongwritingIProdukcjaMuzykiRoute,
   BajtloveGranieWarsztatyUmuzykalniajaceRoute:

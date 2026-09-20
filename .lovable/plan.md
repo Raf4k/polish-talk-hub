@@ -1,18 +1,20 @@
-# Odświeżenie kolorystyki i nawigacji
+# Rozbudowa BajtLOVE Granie
 
 ## Zakres
-- Wprowadzić magentę jako wyrazisty akcent, zachowując terakotę i szałwię jako spokojne tło marki.
-- Zmienić górne menu na: O nas, Co robimy, Projekty, Aktualności, Galeria, Wesprzyj nas, Kontakt.
-- Zapewnić działające miejsca docelowe dla każdej nowej pozycji menu, wykorzystując istniejące treści tam, gdzie to możliwe.
-- Przenieść dokumenty do stopki i ułożyć linki: KRS, Statut, Sprawozdania, Polityka prywatności, Kontakt.
-- Dostosować menu do mniejszych ekranów, aby dłuższy zestaw pozycji pozostał czytelny.
+- Zmienić pastelowy zielony kolor stopki na pastelową brzoskwinię, zachowując pozostałą kolorystykę strony.
+- Przekształcić stronę „BajtLOVE Granie” w czytelny wybór trzech obszarów: Koncerty, Warsztaty umuzykalniające oraz Songwriting i produkcja muzyki.
+- Utworzyć osobną podstronę dla każdego obszaru i podłączyć odsyłacze między nimi.
+- Umieścić przekazane treści na odpowiednich podstronach, z wyraźnymi śródtytułami, listami i wyróżnieniami.
+- Dodać cztery przesłane zdjęcia koncertowe do strony „Koncerty” w spójnej galerii.
+- Wyróżnić napis „BajtLOVE Granie” wielokolorowo przy użyciu obecnych pastelowych kolorów marki.
 
-## Treści tymczasowe
-- Dla stron bez przekazanej jeszcze treści zastosować krótkie, neutralne komunikaty „wkrótce”, bez wymyślania danych fundacji.
-- „KRS” pokaże przekazany numer; Statut, Sprawozdania i Polityka prywatności otrzymają przygotowane miejsca docelowe do późniejszego uzupełnienia.
+## Układ
+- Główna strona projektu pokaże trzy duże, czytelne odsyłacze do podstron.
+- Na każdej podstronie znajdzie się wspólna nawigacja między trzema obszarami.
+- Długie teksty pozostaną wyjustowane i otrzymają rytmiczny podział na krótsze sekcje, aby dobrze czytały się także na telefonie.
 
 ## Szczegóły techniczne
-- Kolory pozostaną oparte na wspólnych zmiennych motywu; magenta stanie się głównym akcentem interaktywnym.
-- Każda pozycja nawigacji otrzyma własną działającą stronę lub istniejące miejsce docelowe.
-- Każda nowa strona otrzyma własny tytuł i opis dla wyszukiwarek oraz udostępniania.
-- Po wdrożeniu sprawdzę wygląd i działanie na widoku komputerowym oraz mobilnym.
+- Podstrony otrzymają adresy: `/bajtlove-granie/koncerty`, `/bajtlove-granie/warsztaty-umuzykalniajace` i `/bajtlove-granie/songwriting-i-produkcja-muzyki`.
+- Każda podstrona otrzyma własny tytuł i opis dla wyszukiwarek oraz udostępniania.
+- Zdjęcia zostaną zapisane jako zasoby strony i otrzymają opisy alternatywne.
+- Po wdrożeniu sprawdzę działanie odsyłaczy oraz wygląd stron w widoku komputerowym i mobilnym.

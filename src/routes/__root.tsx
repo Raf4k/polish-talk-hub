@@ -192,7 +192,7 @@ function Footer() {
   ] as const;
 
   return (
-    <footer className="border-t border-border bg-muted">
+    <footer className="border-t border-border bg-footer">
       <div className="mx-auto max-w-5xl px-6 py-12">
         <div className="grid gap-8 md:grid-cols-2">
           <div>

@@ -120,6 +120,7 @@ function Header() {
     { label: "BajtLOVE Granie", to: "/bajtlove-granie" },
     { label: "Galeria", to: "/galeria" },
     { label: "Wolontariat", to: "/wolontariat" },
+    { label: "Rekomendacje", to: "/rekomendacje" },
     { label: "Wesprzyj nas", to: "/wesprzyj-nas" },
     { label: "Kontakt", to: "/kontakt" },
   ] as const;
@@ -186,6 +187,7 @@ function Footer() {
   const documentLinks = [
     { label: "KRS", to: "/krs" },
     { label: "Statut", to: "/statut" },
+    { label: "Rekomendacje", to: "/rekomendacje" },
     { label: "Sprawozdania", to: "/sprawozdania" },
     { label: "Polityka prywatności", to: "/polityka-prywatnosci" },
     { label: "Kontakt", to: "/kontakt" },

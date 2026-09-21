@@ -19,6 +19,7 @@ import { Route as KrsRouteImport } from './routes/krs'
 import { Route as ONasRouteImport } from './routes/o-nas'
 import { Route as PolitykaPrywatnosciRouteImport } from './routes/polityka-prywatnosci'
 import { Route as ProjektyRouteImport } from './routes/projekty'
+import { Route as RekomendacjeRouteImport } from './routes/rekomendacje'
 import { Route as SprawozdaniaRouteImport } from './routes/sprawozdania'
 import { Route as StatutRouteImport } from './routes/statut'
 import { Route as WesprzyjNasRouteImport } from './routes/wesprzyj-nas'
@@ -78,6 +79,11 @@ const ProjektyRoute = ProjektyRouteImport.update({
   path: '/projekty',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RekomendacjeRoute = RekomendacjeRouteImport.update({
+  id: '/rekomendacje',
+  path: '/rekomendacje',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SprawozdaniaRoute = SprawozdaniaRouteImport.update({
   id: '/sprawozdania',
   path: '/sprawozdania',
@@ -132,6 +138,7 @@ export interface FileRoutesByFullPath {
   '/o-nas': typeof ONasRoute
   '/polityka-prywatnosci': typeof PolitykaPrywatnosciRoute
   '/projekty': typeof ProjektyRoute
+  '/rekomendacje': typeof RekomendacjeRoute
   '/sprawozdania': typeof SprawozdaniaRoute
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
@@ -151,6 +158,7 @@ export interface FileRoutesByTo {
   '/o-nas': typeof ONasRoute
   '/polityka-prywatnosci': typeof PolitykaPrywatnosciRoute
   '/projekty': typeof ProjektyRoute
+  '/rekomendacje': typeof RekomendacjeRoute
   '/sprawozdania': typeof SprawozdaniaRoute
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
@@ -172,6 +180,7 @@ export interface FileRoutesById {
   '/o-nas': typeof ONasRoute
   '/polityka-prywatnosci': typeof PolitykaPrywatnosciRoute
   '/projekty': typeof ProjektyRoute
+  '/rekomendacje': typeof RekomendacjeRoute
   '/sprawozdania': typeof SprawozdaniaRoute
   '/statut': typeof StatutRoute
   '/wesprzyj-nas': typeof WesprzyjNasRoute
@@ -194,6 +203,7 @@ export interface FileRouteTypes {
     | '/o-nas'
     | '/polityka-prywatnosci'
     | '/projekty'
+    | '/rekomendacje'
     | '/sprawozdania'
     | '/statut'
     | '/wesprzyj-nas'
@@ -213,6 +223,7 @@ export interface FileRouteTypes {
     | '/o-nas'
     | '/polityka-prywatnosci'
     | '/projekty'
+    | '/rekomendacje'
     | '/sprawozdania'
     | '/statut'
     | '/wesprzyj-nas'
@@ -233,6 +244,7 @@ export interface FileRouteTypes {
     | '/o-nas'
     | '/polityka-prywatnosci'
     | '/projekty'
+    | '/rekomendacje'
     | '/sprawozdania'
     | '/statut'
     | '/wesprzyj-nas'
@@ -254,6 +266,7 @@ export interface RootRouteChildren {
   ONasRoute: typeof ONasRoute
   PolitykaPrywatnosciRoute: typeof PolitykaPrywatnosciRoute
   ProjektyRoute: typeof ProjektyRoute
+  RekomendacjeRoute: typeof RekomendacjeRoute
   SprawozdaniaRoute: typeof SprawozdaniaRoute
   StatutRoute: typeof StatutRoute
   WesprzyjNasRoute: typeof WesprzyjNasRoute
@@ -330,6 +343,13 @@ declare module '@tanstack/react-router' {
       path: '/projekty'
       fullPath: '/projekty'
       preLoaderRoute: typeof ProjektyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rekomendacje': {
+      id: '/rekomendacje'
+      path: '/rekomendacje'
+      fullPath: '/rekomendacje'
+      preLoaderRoute: typeof RekomendacjeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sprawozdania': {
@@ -422,6 +442,7 @@ const rootRouteChildren: RootRouteChildren = {
   ONasRoute: ONasRoute,
   PolitykaPrywatnosciRoute: PolitykaPrywatnosciRoute,
   ProjektyRoute: ProjektyRoute,
+  RekomendacjeRoute: RekomendacjeRoute,
   SprawozdaniaRoute: SprawozdaniaRoute,
   StatutRoute: StatutRoute,
   WesprzyjNasRoute: WesprzyjNasRoute,

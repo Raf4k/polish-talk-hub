@@ -67,5 +67,6 @@
 
 ### Strona główna i dokumenty — 21.09.2026
 - [x] Ustawić przesłane zdjęcia jako zmieniające się zdjęcia główne
-- [x] Zmienić hasło w stopce na „Słuchamy. Tworzymy. Łączymy. Inspirujemy.”
+- [x] Zmienić hasło w stopce na „Słuchamy. Tworzymy. Łączymy. Inspirujemy."
+- [x] Dodać zakładkę Rekomendacje z dwoma PDF do wglądu (Starosta Pszczyński, Bytomskie Centrum Kultury)
 - [x] Udostępnić najnowszy przesłany statut PDF

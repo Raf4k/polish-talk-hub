@@ -200,7 +200,7 @@ function Footer() {
               Fundacja Przez Pryzmat Dźwięku
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Tworzymy kulturę, która łączy.
+              Słuchamy. Tworzymy. Łączymy. Inspirujemy.
             </p>
           </div>
           <div className="space-y-1 text-sm text-muted-foreground">

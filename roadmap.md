@@ -66,6 +66,6 @@
 - [x] Dodać cztery zdjęcia do strony Koncerty
 
 ### Strona główna i dokumenty — 21.09.2026
-- [ ] Ustawić przesłane zdjęcia jako zmieniające się zdjęcia główne
-- [ ] Zmienić hasło w stopce na „Słuchamy. Tworzymy. Łączymy. Inspirujemy.”
-- [ ] Udostępnić najnowszy przesłany statut PDF
+- [x] Ustawić przesłane zdjęcia jako zmieniające się zdjęcia główne
+- [x] Zmienić hasło w stopce na „Słuchamy. Tworzymy. Łączymy. Inspirujemy.”
+- [x] Udostępnić najnowszy przesłany statut PDF

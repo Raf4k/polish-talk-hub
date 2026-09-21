@@ -64,3 +64,8 @@
 - [x] Podzielić BajtLOVE Granie na podstrony: Koncerty, Warsztaty umuzykalniające, Songwriting i produkcja muzyki
 - [x] Dodać pełne treści trzech obszarów
 - [x] Dodać cztery zdjęcia do strony Koncerty
+
+### Strona główna i dokumenty — 21.09.2026
+- [x] Ustawić przesłane zdjęcia jako zmieniające się zdjęcia główne
+- [x] Zmienić hasło w stopce na „Słuchamy. Tworzymy. Łączymy. Inspirujemy.”
+- [x] Udostępnić najnowszy przesłany statut PDF

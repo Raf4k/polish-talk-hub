@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import hero1 from "../assets/hero.jpg";
-import hero2 from "../assets/hero-2.jpg";
-import hero3 from "../assets/hero-3.jpg";
-import hero4 from "../assets/hero-4.jpg";
+import concertGuitar from "../assets/bajtlove-koncert-gitara.jpeg.asset.json";
+import workshopInstruments from "../assets/bajtlove-warsztaty-instrumenty.jpg.asset.json";
+import concertBass from "../assets/bajtlove-koncert-bas.jpeg.asset.json";
+import workshopFamilies from "../assets/bajtlove-warsztaty-rodzinne.jpg.asset.json";
 
 const HERO_IMAGES = [
-  { src: hero1, alt: "Pryzmat rozszczepiający światło na ciemnym drewnie" },
-  { src: hero2, alt: "Pryzmat, nuty i flet w świetle terakoty i szałwii" },
-  { src: hero3, alt: "Pryzmat, farby dziecka i suszona szałwia" },
-  { src: hero4, alt: "Pryzmat, gitara i ceramiczna waza" },
+  { src: concertGuitar.url, alt: "Gitarzystka podczas plenerowego koncertu BajtLOVE Granie" },
+  { src: workshopInstruments.url, alt: "Warsztaty umuzykalniające dla dzieci i rodziców" },
+  { src: concertBass.url, alt: "Zespół podczas plenerowego koncertu BajtLOVE Granie" },
+  { src: workshopFamilies.url, alt: "Rodzinne spotkanie muzyczne BajtLOVE Granie" },
 ];
 
 export const Route = createFileRoute("/")({

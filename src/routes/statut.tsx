@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import statutAsset from "../assets/statut-fundacji.pdf.asset.json";
+import statutAsset from "../assets/statut-fundacji-2024.pdf.asset.json";
 export const Route = createFileRoute("/statut")({ head: () => ({ meta: [
   { title: "Statut — Fundacja Przez Pryzmat Dźwięku" }, { name: "description", content: "Statut Fundacji Przez Pryzmat Dźwięku." },
   { property: "og:title", content: "Statut — Fundacja Przez Pryzmat Dźwięku" }, { property: "og:description", content: "Statut Fundacji Przez Pryzmat Dźwięku." },

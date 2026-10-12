@@ -29,11 +29,12 @@
 - [x] Favicon z logo
 
 ### Oczekuje na treść od użytkownika
-- [ ] Treść strony "O nas" (pełna)
-- [ ] Treść strony "BajtLOVE Granie"
-- [ ] URL-e do mediów społecznościowych (YouTube i LinkedIn)
+- [x] Treść strony "O nas" (pełna)
+- [x] Treść strony "BajtLOVE Granie"
+- [x] URL-e do mediów społecznościowych (Facebook, Instagram, YouTube; LinkedIn — placeholder)
 - [x] Dane fundacji: KRS 0001144183, NIP 6312727778, REGON 540417288, adres ul. Zwycięstwa 1, 44-100 Gliwice, zarząd (Małgorzata Kramarz, Dominika Kocur)
-- [ ] Pozostałe dane fundacji: email, telefon
+- [x] Pozostałe dane fundacji: email, telefon
+- [ ] Treść: "Projekty", "Galeria", "KRS", "Sprawozdania", "Polityka prywatności"
 - [x] Podpisy do zdjęcia zarządu (Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu)
 
 ### Odświeżenie nawigacji i kolorystyki
@@ -70,3 +71,7 @@
 - [x] Zmienić hasło w stopce na „Słuchamy. Tworzymy. Łączymy. Inspirujemy."
 - [x] Dodać zakładkę Rekomendacje z dwoma PDF do wglądu (Starosta Pszczyński, Bytomskie Centrum Kultury)
 - [x] Udostępnić najnowszy przesłany statut PDF
+
+### Strona główna i zrzutka — 21.09.2026
+- [x] Motto w trzech linijkach ze słowem "MUZYKA" na różowo
+- [x] Zakładka "Wesprzyj nas": plakat zrzutki z klikalnym odsyłaczem do https://zrzutka.pl/a38ux8

@@ -69,7 +69,7 @@ function HeroCarousel() {
       <div className="absolute inset-0 bg-hero-overlay" />
       <div className="relative z-10 px-6 text-center">
         <h1 className="mx-auto max-w-6xl font-display text-3xl font-semibold leading-tight tracking-tight text-hero-foreground md:text-5xl lg:text-6xl">
-          <span className="block">WIERZYMY, ŻE <span className="text-primary">MUZYKA</span></span>
+          <span className="block">WIERZYMY, ŻE <span className="text-motto-highlight">MUZYKA</span></span>
           <span className="block">ZMIENIA SPOSÓB W JAKI PATRZYMY</span>
           <span className="block">NA ŚWIAT I SIEBIE NAWZAJEM</span>
         </h1>

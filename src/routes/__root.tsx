@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import logoUrl from "../assets/logo.png";
+import logoAsset from "../assets/logo-fundacji-kot.png.asset.json";
 
 function NotFoundComponent() {
   return (
@@ -128,17 +128,26 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="mx-auto max-w-7xl px-4 py-3 lg:px-6">
-        <div className="flex items-center justify-between gap-4">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
           <Link
             to="/"
-            className="font-display text-base font-semibold leading-tight text-foreground transition-colors hover:text-primary lg:text-lg"
+            className="hidden font-display text-lg font-semibold leading-tight text-foreground transition-colors hover:text-primary lg:block"
             activeProps={{ className: "text-primary" }}
             activeOptions={{ exact: true }}
           >
             <span className="whitespace-nowrap">Fundacja Przez Pryzmat Dźwięku</span>
           </Link>
-          <div className="flex shrink-0 items-center gap-3">
-          <div className="hidden items-center gap-3 sm:flex">
+          <div className="lg:hidden" />
+          <Link to="/" aria-label="Fundacja Przez Pryzmat Dźwięku — strona główna" className="justify-self-center">
+            <img
+              src={logoAsset.url}
+              alt="Logo Fundacji Przez Pryzmat Dźwięku"
+              width={112}
+              height={112}
+              className="h-24 w-24 object-contain lg:h-28 lg:w-28"
+            />
+          </Link>
+          <div className="flex flex-wrap items-center justify-end gap-3">
             {socialLinks.map(({ name, href, Icon }) => (
               <a
                 key={name}
@@ -152,16 +161,8 @@ function Header() {
               </a>
             ))}
           </div>
-          <img
-            src={logoUrl}
-            alt="Logo Fundacji Przez Pryzmat Dźwięku"
-            width={48}
-            height={48}
-              className="h-11 w-11 object-contain"
-          />
-          </div>
         </div>
-        <nav aria-label="Główna nawigacja" className="mt-3 flex gap-5 overflow-x-auto border-t border-border/70 pt-3 text-xs font-semibold uppercase sm:justify-center sm:text-sm">
+        <nav aria-label="Główna nawigacja" className="mt-3 flex gap-5 overflow-x-auto border-t border-border/70 pt-3 text-xs font-semibold uppercase sm:text-sm xl:justify-center">
           {navigation.map((item) => (
             <Link
               key={item.to}

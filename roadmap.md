@@ -34,7 +34,7 @@
 - [x] URL-e do mediów społecznościowych (Facebook, Instagram, YouTube; LinkedIn — placeholder)
 - [x] Dane fundacji: KRS 0001144183, NIP 6312727778, REGON 540417288, adres ul. Zwycięstwa 1, 44-100 Gliwice, zarząd (Małgorzata Kramarz, Dominika Kocur)
 - [x] Pozostałe dane fundacji: email, telefon
-- [ ] Treść: "Projekty", "Galeria", "KRS", "Sprawozdania", "Polityka prywatności"
+- [ ] Treść: "Galeria", "KRS", "Sprawozdania", "Polityka prywatności"
 - [x] Podpisy do zdjęcia zarządu (Małgorzata Kramarz — Przewodnicząca Zarządu, Dominika Kocur — Wiceprzewodnicząca Zarządu)
 
 ### Odświeżenie nawigacji i kolorystyki
@@ -75,3 +75,9 @@
 ### Strona główna i zrzutka — 21.09.2026
 - [x] Motto w trzech linijkach ze słowem "MUZYKA" na różowo
 - [x] Zakładka "Wesprzyj nas": plakat zrzutki z klikalnym odsyłaczem do https://zrzutka.pl/a38ux8
+
+### Dokumenty, logo i projekty — 12.10.2026
+- [x] Dodać rekomendacje MOKiS i Fundacji Majstry i Maszkety z fragmentami dokumentów i PDF
+- [x] Wyśrodkować nowe logo na górnym pasku i zaktualizować favicon
+- [x] Dopasować kolory do logo, zastępując zielony żółtym
+- [x] Uzupełnić Zrealizowane projekty: Górnoślōnski Praktyczny Elementarz Przedszkolaka oraz Terapiosenki

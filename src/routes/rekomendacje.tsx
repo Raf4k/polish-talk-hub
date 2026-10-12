@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import rekomendacjeFinalAsset from "../assets/Rekomendacje_final.pdf.asset.json";
 import rekomendacjaBecekAsset from "../assets/Rekomendacja_BECEK.pdf.asset.json";
+import rekomendacjaMokisAsset from "../assets/rekomendacja-mokis.pdf.asset.json";
+import rekomendacjaMajstryAsset from "../assets/rekomendacja-majstry.pdf.asset.json";
 
 export const Route = createFileRoute("/rekomendacje")({
   head: () => ({
@@ -38,7 +40,7 @@ function RekomendacjaCard({
 }: {
   title: string;
   source: string;
-  date: string;
+  date?: string;
   summary: string;
   highlights: string[];
   href: string;
@@ -53,7 +55,7 @@ function RekomendacjaCard({
         {title}
       </h2>
       <p className="mt-1 text-sm text-muted-foreground">
-        {source} · {date}
+        {source}{date ? ` · ${date}` : ""}
       </p>
       <p className="mt-4 text-justify text-base leading-relaxed text-foreground/90">
         {summary}
@@ -112,6 +114,31 @@ function Rekomendacje() {
       </p>
 
       <div className="mt-10 space-y-8">
+        <RekomendacjaCard
+          title="Miejski Ośrodek Kultury i Sztuki w Pyskowicach"
+          source="Beata Antosik, Dyrektor MOKiS"
+          date="22 września 2026 r."
+          summary="Miejski Ośrodek Kultury i Sztuki w Pyskowicach rekomenduje Fundację Przez Pryzmat Dźwięku oraz zespół BajtLOVE Granie jako profesjonalnego, zaangażowanego i godnego zaufania partnera do współpracy przy realizacji wydarzeń kulturalnych, edukacyjnych i rodzinnych."
+          highlights={[
+            "„Na uwagę zasługują przede wszystkim pasja, kreatywność oraz umiejętność budowania bezpośredniej relacji z publicznością.”",
+            "„Przygotowywane przez zespół działania łączą walory artystyczne z elementami edukacyjnymi i animacyjnymi, tworząc atrakcyjną i wartościową ofertę dla odbiorców w różnym wieku.”",
+            "„Fundacja Przez Pryzmat Dźwięku wyróżnia się również rzetelnością, bardzo dobrą organizacją pracy oraz otwartością na współpracę z instytucjami kultury.”",
+          ]}
+          href={rekomendacjaMokisAsset.url}
+          filename="mokis.pdf"
+        />
+        <RekomendacjaCard
+          title="Fundacja Majstry i Maszkety"
+          source="Marta Keler, Prezes Fundacji Majstry i Maszkety"
+          summary="Fundacja Majstry i Maszkety opisuje ponad rok współpracy z Fundacją Przez Pryzmat Dźwięku. W rekomendacji podkreślono kreatywność, zaangażowanie oraz umiejętność przekuwania pomysłów w konkretne działania."
+          highlights={[
+            "„Potrafi szybko analizować sytuację, trafnie oceniać okoliczności i znajdować skuteczne rozwiązania, również w nieprzewidzianych i trudnych momentach.”",
+            "„Wyróżnia ją duża elastyczność, samodzielność i umiejętność improwizacji, które w połączeniu z bystrością i otwartością na nowe pomysły stanowią istotne atuty w prowadzeniu własnej działalności.”",
+            "„Jest osobą, która potrafi dostrzegać możliwości tam, gdzie inni widzą ograniczenia, a swoje pomysły przekuć w konkretne działania.”",
+          ]}
+          href={rekomendacjaMajstryAsset.url}
+          filename="majstry.pdf"
+        />
         <RekomendacjaCard
           title="Starosta Pszczyński"
           source="Starostwo Powiatowe w Pszczynie"

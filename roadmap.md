@@ -77,7 +77,7 @@
 - [x] Zakładka "Wesprzyj nas": plakat zrzutki z klikalnym odsyłaczem do https://zrzutka.pl/a38ux8
 
 ### Dokumenty, logo i projekty — 12.10.2026
-- [ ] Dodać rekomendacje MOKiS i Fundacji Majstry i Maszkety z fragmentami dokumentów i PDF
-- [ ] Wyśrodkować nowe logo na górnym pasku i zaktualizować favicon
-- [ ] Dopasować kolory do logo, zastępując zielony żółtym
-- [ ] Uzupełnić Zrealizowane projekty: Górnoślōnski Praktyczny Elementarz Przedszkolaka oraz Terapiosenki
+- [x] Dodać rekomendacje MOKiS i Fundacji Majstry i Maszkety z fragmentami dokumentów i PDF
+- [x] Wyśrodkować nowe logo na górnym pasku i zaktualizować favicon
+- [x] Dopasować kolory do logo, zastępując zielony żółtym
+- [x] Uzupełnić Zrealizowane projekty: Górnoślōnski Praktyczny Elementarz Przedszkolaka oraz Terapiosenki

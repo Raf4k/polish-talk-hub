@@ -13,7 +13,7 @@ import { Serpentyny } from "../components/serpentyny";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import logoAsset from "../assets/logo-fundacji-kot.png.asset.json";
+import logoAsset from "../assets/logo-fundacji.png.asset.json";
 
 function NotFoundComponent() {
   return (
@@ -128,7 +128,7 @@ function Header() {
   ] as const;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <header className="sticky top-0 z-50 border-b border-border bg-footer">
       <div className="mx-auto max-w-7xl px-4 py-3 lg:px-6">
         <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
           <Link

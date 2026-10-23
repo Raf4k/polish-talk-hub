@@ -1,17 +1,11 @@
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
-// or the app will break with duplicate plugins:
-//   - TanStack devtools (dev-only, first), tanstackStart, viteReact, tailwindcss, tsConfigPaths,
-//     nitro (build-only using cloudflare as a default target), VITE_* env injection, @ path alias,
-//     React/TanStack dedupe, error logger plugins, and sandbox detection (port/host/strictPort).
+// @lovable.dev/vite-tanstack-config already includes TanStack Start, React,
+// Tailwind, path aliases, and the Nitro integration used by Lovable.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 const isOvhStaticBuild: boolean = process.env.OVH_STATIC_BUILD === "1";
 
 export default defineConfig({
   tanstackStart: {
-    server: {
-      entry: isOvhStaticBuild ? "server-static" : "server",
-    },
     ...(isOvhStaticBuild
       ? {
           prerender: {
@@ -22,7 +16,11 @@ export default defineConfig({
             failOnError: true,
           },
         }
-      : {}),
+      : {
+          server: {
+            entry: "server",
+          },
+        }),
   },
   ...(isOvhStaticBuild
     ? {

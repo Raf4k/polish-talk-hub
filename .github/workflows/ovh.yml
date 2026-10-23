@@ -1,0 +1,82 @@
+name: OVH - build and publish
+
+on:
+  push:
+    branches: [ovh-deploy]
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish this branch to OVH (requires complete media and FTP secrets)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ovh-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/ovh-deploy'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.3.14"
+      - name: Use public package downloads outside Lovable
+        run: node scripts/prepare-ovh-install.mjs
+      - run: bun install --frozen-lockfile --registry https://registry.npmjs.org
+      - name: Build a test artifact (missing media reported)
+        if: inputs.publish != true
+        run: bun run build:ovh:preview
+      - name: Build a complete artifact for publication
+        if: inputs.publish == true
+        run: bun run build:ovh
+      - name: Build summary
+        run: |
+          node --input-type=module <<'JS'
+          import { readFileSync, appendFileSync } from 'node:fs';
+          const report = JSON.parse(readFileSync('ovh-dist/ovh-build-report.json', 'utf8'));
+          appendFileSync(process.env.GITHUB_STEP_SUMMARY,
+            `OVH: ${report.routes.length} routes, ${(report.bytes / 1e6).toFixed(2)} MB.\n\n` +
+            `Ready to publish: ${report.deployable}.\n\n` +
+            report.missingAssets.map(name => `- Missing: ${name}\n`).join(''));
+          JS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ovh-site
+          path: ovh-dist/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    if: github.event_name == 'workflow_dispatch' && inputs.publish == true && github.ref == 'refs/heads/ovh-deploy'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: ovh-production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: ovh-site
+          path: ovh-dist/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Upload using encrypted FTP
+        run: python scripts/deploy-ovh.py
+        env:
+          OVH_FTP_HOST: ${{ secrets.OVH_FTP_HOST }}
+          OVH_FTP_USER: ${{ secrets.OVH_FTP_USER }}
+          OVH_FTP_PASSWORD: ${{ secrets.OVH_FTP_PASSWORD }}
+          OVH_FTP_DIR: ${{ vars.OVH_FTP_DIR }}
+          OVH_FTP_PORT: ${{ vars.OVH_FTP_PORT || '21' }}

@@ -1,0 +1,43 @@
+name: Build static test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-static:
+    runs-on: ubuntu-latest
+
+    env:
+      OVH_STATIC_BUILD: "1"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build and prerender
+        run: bun run build
+
+      - name: Verify static output
+        shell: bash
+        run: |
+          test -f .output/public/index.html
+          echo "Static pages:"
+          find .output/public -name "index.html" -type f | sort
+          echo
+          echo "Lovable asset references:"
+          grep -R "/__l5e/assets-v1/" .output/public --include="*.html" -l || true
+
+      - name: Upload static site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-site
+          path: .output/public
+          if-no-files-found: error

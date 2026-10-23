@@ -81,3 +81,7 @@
 - [x] Wyśrodkować nowe logo na górnym pasku i zaktualizować favicon
 - [x] Dopasować kolory do logo, zastępując zielony żółtym
 - [x] Uzupełnić Zrealizowane projekty: Górnoślōnski Praktyczny Elementarz Przedszkolaka oraz Terapiosenki
+
+### Kolorystyka — 23.10.2026
+- [x] Zamienić granatowy kolor akcentów na morski zielony
+- [x] Ustawić tło dolnej stopki w kolorze bladego różu

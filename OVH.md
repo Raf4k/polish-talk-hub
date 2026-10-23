@@ -34,6 +34,12 @@ statutów to `statut-fundacji-przez-pryzmat-dzwieku-2024.pdf` oraz
 
 ## 2. Zbuduj i sprawdź paczkę
 
+Materiały wyeksportowane z Lovable są już w `public/media/`. Okładka
+`terapiosenki-okladka.png` zawiera dane WebP; nazwa oryginału pozostaje zachowana,
+a dołączony `.htaccess` ustawia dla niej `Content-Type: image/webp`.
+Oba pliki statutu są identyczne bajt po bajcie; pozostawiono obie nazwy,
+aby zachować zgodność ze wskaźnikami zasobów.
+
 Wymagane Node.js 24 i Bun 1.3.14:
 
 ```sh

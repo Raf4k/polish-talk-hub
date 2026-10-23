@@ -2,6 +2,11 @@ Options -Indexes -MultiViews
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
 
+# Original Lovable upload contains WebP data despite its preserved .png name.
+<Files "terapiosenki-okladka.png">
+  ForceType image/webp
+</Files>
+
 <IfModule mod_headers.c>
   <FilesMatch "\.(html|json)$">
     Header set Cache-Control "no-cache"

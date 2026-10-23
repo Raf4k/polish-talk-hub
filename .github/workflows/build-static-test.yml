@@ -22,6 +22,13 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      - name: Disable Lovable custom server for static build
+        shell: bash
+        run: |
+          if [ -f src/server.ts ]; then
+            mv src/server.ts src/server.lovable.ts.disabled
+          fi
+
       - name: Build and prerender
         run: bun run build
 

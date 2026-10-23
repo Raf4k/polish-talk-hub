@@ -77,6 +77,7 @@ function RekomendacjaCard({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        download={`${filename}.pdf`}
         className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
       >
         <svg
@@ -125,7 +126,7 @@ function Rekomendacje() {
             "„Fundacja Przez Pryzmat Dźwięku wyróżnia się również rzetelnością, bardzo dobrą organizacją pracy oraz otwartością na współpracę z instytucjami kultury.”",
           ]}
           href={rekomendacjaMokisAsset.url}
-          filename="mokis.pdf"
+          filename="Miejski Ośrodek Kultury i Sztuki w Pyskowicach"
         />
         <RekomendacjaCard
           title="Fundacja Majstry i Maszkety"
@@ -137,7 +138,7 @@ function Rekomendacje() {
             "„Jest osobą, która potrafi dostrzegać możliwości tam, gdzie inni widzą ograniczenia, a swoje pomysły przekuć w konkretne działania.”",
           ]}
           href={rekomendacjaMajstryAsset.url}
-          filename="majstry.pdf"
+          filename="Fundacja Majstry i Maszkety"
         />
         <RekomendacjaCard
           title="Starosta Pszczyński"
@@ -151,7 +152,7 @@ function Rekomendacje() {
             "Występ BajtLOVE Granie stał się jednym z najważniejszych punktów programu pikniku.",
           ]}
           href={rekomendacjeFinalAsset.url}
-          filename="Rekomendacje_final.pdf"
+          filename="Starostwo Powiatowe Pszczyna"
         />
 
         <RekomendacjaCard
@@ -166,7 +167,7 @@ function Rekomendacje() {
             "Mamy nadzieję cieszyć się tą zawodową relacją także podczas innych kulturalnych projektów.",
           ]}
           href={rekomendacjaBecekAsset.url}
-          filename="Rekomendacja_BECEK.pdf"
+          filename="Bytomskie Centrum Kultury"
         />
       </div>
     </section>

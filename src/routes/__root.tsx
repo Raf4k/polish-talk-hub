@@ -9,6 +9,8 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
+import { Serpentyny } from "../components/serpentyny";
+
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import logoAsset from "../assets/logo-fundacji-kot.png.asset.json";
@@ -296,6 +298,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
+        <Serpentyny />
         <Header />
         <main className="flex-1">
           <Outlet />

@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "build:ovh": "node scripts/build-ovh.mjs",
+    "build:ovh:preview": "node scripts/build-ovh.mjs --allow-missing-assets",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",

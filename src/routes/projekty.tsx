@@ -1,5 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import terapiosenkiCover from "../assets/terapiosenki-okladka.png.asset.json";
+
+const YOUTUBE_TERAPISENKI = "https://www.youtube.com/channel/UCl2j1oVVM5jgDJgrw9elCkg";
+
 export const Route = createFileRoute("/projekty")({
   head: () => ({
     meta: [
@@ -54,8 +58,27 @@ function Projekty() {
             <li>„RTV&amp;AGD”</li>
             <li>„Z Tobą Mamo”</li>
             <li>„Gdy ktoś zapyta się”</li>
-            <li>„Kołysanka o placu budowy”</li>
+            <li>„Kołysanka o placu budowy"</li>
           </ul>
+        </div>
+        <div className="mt-10 flex flex-col items-center gap-4">
+          <a href={YOUTUBE_TERAPISENKI} target="_blank" rel="noopener noreferrer" className="block">
+            <img
+              src={terapiosenkiCover.url}
+              alt="Okładka płyty Terapiosenki — Dominika Kocur"
+              width={360}
+              height={360}
+              className="w-full max-w-xs rounded-lg shadow-md"
+            />
+          </a>
+          <a
+            href={YOUTUBE_TERAPISENKI}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold text-primary underline-offset-4 transition-colors hover:text-accent-foreground hover:underline"
+          >
+            Posłuchaj Terapiosenek na YouTube →
+          </a>
         </div>
       </article>
     </section>

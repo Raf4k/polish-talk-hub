@@ -47,6 +47,12 @@ bun install --frozen-lockfile
 bun run build:ovh
 ```
 
+GitHub Actions przed instalacją uruchamia `node scripts/prepare-ovh-install.mjs`.
+Skrypt w roboczej kopii `bun.lock` zamienia adresy pobierania z serwera pakietów
+Lovable na publiczny npm. Wersje, zależności i sumy kontrolne pozostają zachowane;
+zmodyfikowany lockfile nie jest zapisywany do GitHuba ani synchronizowany z Lovable.
+Możesz uruchomić ten sam krok lokalnie, jeśli serwer Lovable zwraca błąd 429.
+
 Niekompletny test (bez zgody na publikację):
 
 ```sh

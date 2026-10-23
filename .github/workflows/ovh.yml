@@ -30,7 +30,9 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: "1.3.14"
-      - run: bun install --frozen-lockfile
+      - name: Use public package downloads outside Lovable
+        run: node scripts/prepare-ovh-install.mjs
+      - run: bun install --frozen-lockfile --registry https://registry.npmjs.org
       - name: Build a test artifact (missing media reported)
         if: inputs.publish != true
         run: bun run build:ovh:preview
